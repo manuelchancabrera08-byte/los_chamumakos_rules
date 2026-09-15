@@ -113,6 +113,20 @@ Y cada turno de Mako debe decir `MAKO SPEAKS ONLY`.
 ### 19. Consulta obligatoria del repositorio antes de generar
 **Regla de proceso:** antes de crear cualquier imagen, guion o prompt de animación, consultar las especificaciones vigentes en GitHub: prompt maestro, reglas de voz, ficha del personaje, continuidad visual y registro de aprendizajes. No trabajar solo desde memoria si el repositorio ya contiene una regla oficial.
 
+### 20. Mako necesita sonar como señor, no solo “male”
+**Síntoma:** incluso con `MALE ONLY` Grok puede asignar una voz femenina o demasiado juvenil.
+**Corrección:** describir positivamente la identidad acústica en cada turno: `MATURE MEXICAN MAN, 55–65, deep low baritone, strong chest resonance, naturally rough and slightly hoarse from age, calm and confident`.
+**Regla nueva:** para Mako no usar solo género; fijar género + edad percibida + registro + resonancia + textura en cada bloque de voz.
+
+### 21. Reference audio es la vía técnica más fuerte
+**Hallazgo oficial xAI:** Grok Imagine Video 1.5 Reference-to-Video acepta hasta 3 voces preset mediante `reference_audios` + `voice_id`, etiquetadas como `<AUDIO_0>`, `<AUDIO_1>`, etc. Los tags por sí solos no fijan una voz si no se envían referencias de audio.
+**Regla de ahorro de créditos:** en UI sin selector de voz, el prompt textual es best-effort. Si el género de Mako vuelve a fallar reiteradamente, usar Reference-to-Video con preset voice si está disponible o reemplazar la voz en edición.
+
+### 22. Movimiento Six Seven investigado
+**Hallazgo:** el gesto viral `six seven / 6-7` se reconoce por las dos manos abiertas a la altura del pecho, como una balanza: una mano sube mientras la otra baja y luego alternan. Fuentes recientes describen que funciona mejor con movimientos rápidos y no demasiado altos.
+**Aplicación EP-002:** cuando Mako diga `Farmear aura`, ejecutar durante esa misma frase el gesto Six Seven: codos cerca del torso, ambas manos abiertas a la altura del pecho, palmas orientadas hacia arriba o ligeramente planas según la referencia, alternando arriba/abajo de forma corta y rítmica 2–3 veces; rostro serio, párpados a medio ojo, sin sonreír.
+**Regla nueva:** cuando se use una pose/trend real, investigar primero el gesto y describirlo físicamente; no inventar una pose genérica.
+
 ## Regla de mantenimiento
 Cada nuevo error real debe documentarse aquí con:
 - fecha
