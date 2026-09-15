@@ -19,7 +19,7 @@
 **Aprendizaje:** usar contraste extremo:
 - Cliente: joven, tenor limpio, ligeramente nasal.
 - Mako: mayor, barítono grave, sereno, ronco ligero, barrio, picardía.
-Asignar `<AUDIO_0>` al cliente y `<AUDIO_1>` a Mako cuando se use Reference-to-Video.
+Asignar `<AUDIO_0>` al cliente y `<AUDIO_1>` a Mako únicamente cuando realmente se usen `reference_audios` en Reference-to-Video.
 
 ### 5. Diálogo
 **Problema:** primeros guiones eran demasiado largos y explicativos.
@@ -45,21 +45,20 @@ Ejemplo aprobado:
 
 ### 8. Cliente fuera de cuadro mal interpretado
 **Síntoma:** el cliente no aparece visualmente, y Grok a veces trata de reasignar el turno de diálogo al único personaje visible.
-**Regla nueva:** en este formato el cliente NO aparece jamás; existe únicamente como `OFF-SCREEN MALE CUSTOMER VOICE FROM BEHIND THE CAMERA`. No mostrar cuerpo, cara, manos, reflejo, sombra ni silueta.
+**Regla nueva:** en este formato el cliente NO aparece jamás; existe únicamente como `OFF-SCREEN YOUNG MAN VOICE FROM BEHIND THE CAMERA`. No mostrar cuerpo, cara, manos, reflejo, sombra ni silueta.
 
 ### 9. Voz del cliente convertida a mujer
 **Síntoma:** aunque el prompt decía cliente masculino, Grok generó una voz femenina.
-**Corrección:** repetir de forma compacta y no ambigua: `MALE ONLY`, `young adult MAN`, `unmistakably masculine tenor`, `NEVER female`, y contrastar explícitamente contra Mako.
-**Regla nueva:** para este episodio y formato, el cliente siempre es hombre joven, tenor limpio, claro, más agudo y ligeramente nasal.
+**Corrección:** no depender solo de una descripción global. Repetir en CADA turno del cliente: `OFF-SCREEN YOUNG ADULT MAN, MALE VOICE ONLY, clearly masculine tenor`.
+**Regla nueva:** para este episodio y formato, cada línea del cliente debe reafirmar que es un hombre joven. No usar solo `CUSTOMER` como etiqueta.
 
 ### 10. Mako diciendo líneas del cliente
 **Síntoma:** Mako mueve la boca y pronuncia preguntas asignadas al cliente.
-**Corrección:** ownership estricto de turnos:
-- `CUSTOMER` habla únicamente líneas CUSTOMER como audio fuera de cámara.
-- Durante CUSTOMER, la boca de Mako permanece completamente cerrada.
-- `MAKO` habla únicamente líneas MAKO.
-- Durante MAKO, solo la boca de Mako se mueve.
-**Regla nueva:** cada prompt con diálogo debe incluir `Never let Mako speak or lip-sync CUSTOMER lines` y `Never let CUSTOMER speak MAKO lines`.
+**Corrección:** ownership estricto de turnos y timeline con tiempos. Cada turno del cliente debe incluir:
+- `OFF-SCREEN YOUNG MAN SPEAKS ONLY`
+- `Mako is silent`
+- `Mako's mouth stays fully closed`
+Y cada turno de Mako debe decir `MAKO SPEAKS ONLY`.
 
 ### 11. Diferenciación vocal insuficiente
 **Síntoma:** aunque ambas voces son masculinas, pueden sonar demasiado parecidas.
@@ -67,27 +66,17 @@ Ejemplo aprobado:
 - CUSTOMER = joven, tenor, limpio, brillante, ligeramente nasal.
 - MAKO = 50–60, barítono grave, resonancia de pecho, sereno, confiado, ligeramente ronco/rasposo, picardía de barrio.
 
-### 12. Prompt demasiado declarativo no garantiza ownership
-**Síntoma:** aun con reglas repetidas, Grok asignó `Me voy a quejar` a Mako y volvió a feminizar la voz del cliente.
-**Hallazgo externo:** usuarios de Grok Imagine reportan actualmente el mismo fallo: intercambio de voces, personaje equivocado diciendo líneas y lip-sync del personaje visible para voz off-screen. No es solo un error de redacción; existe inestabilidad del modelo.
-**Aprendizaje:** no seguir agregando párrafos redundantes. Priorizar una gramática temporal simple y explícita.
+### 12. Timeline mejora asignación de hablantes
+**Hallazgo externo:** usuarios de Grok Imagine reportan mejores resultados cuando el diálogo está dividido por timestamps, un solo hablante por bloque y una instrucción explícita de lo que hace el otro personaje en silencio.
+**Regla nueva:** para conversaciones de dos voces usar bloques temporales claros, sin solapamiento, y reservar pequeñas pausas de 0.2–0.4 s entre cambios de hablante cuando el ritmo lo permita.
 
-### 13. Nueva gramática de diálogo para reducir cambios de speaker
-Usar TIEMPOS + NOMBRE FÍSICO DEL HABLANTE, no únicamente etiquetas genéricas `CUSTOMER` / `MAKO`.
-Ejemplo:
-- `[0.0–1.5s] OFF-SCREEN YOUNG MAN speaks: "..." Mako is silent, lips closed.`
-- `[1.5–3.0s] MAKO speaks on camera: "..."`
+### 13. Error persistente específico: “Me voy a quejar”
+**Síntoma:** Mako pronuncia `Me voy a quejar` aunque pertenece al cliente.
+**Corrección prioritaria:** aislar esa línea en su propio bloque de tiempo, precedida y seguida por una micro-pausa, y repetir dentro de ese bloque que el hablante es `OFF-SCREEN YOUNG ADULT MAN — MALE VOICE ONLY`; Mako permanece con boca cerrada durante todo ese bloque.
 
-**Reglas:**
-- Solo un hablante por intervalo.
-- Nunca solapar turnos.
-- Escribir cada acción en orden cronológico.
-- Usar `OFF-SCREEN YOUNG MAN` en vez de depender de la palabra `CUSTOMER`.
-- Repetir `Mako is silent, lips closed` solo en cada turno off-screen, no llenar el prompt de negativas globales.
-- Evitar instrucciones contradictorias o redundantes.
-
-### 14. Estrategia para reducir gasto de créditos
-Si un formato continúa fallando aun con timeline estricto, no insistir indefinidamente en la misma generación. Para máxima fiabilidad, separar la voz off-screen del cliente en postproducción o usar voces de referencia diferentes si la interfaz/API permite `reference_audios` con IDs separados. Un prompt por sí solo no puede garantizar al 100% el speaker binding cuando el modelo está fallando.
+### 14. Límite real de Grok
+**Hallazgo:** hay reportes recientes de intercambio de voces incluso usando referencias. El prompting reduce el fallo, pero no garantiza 100%.
+**Regla de ahorro de créditos:** si una misma asignación de voz falla 2–3 veces con el prompt optimizado, dejar de iterar a ciegas. Para producción estable usar Reference-to-Video con `reference_audios` reales/preset si están disponibles, o generar la actuación visual y añadir la voz fuera de cámara en edición.
 
 ## Regla de mantenimiento
 Cada nuevo error real debe documentarse aquí con:
