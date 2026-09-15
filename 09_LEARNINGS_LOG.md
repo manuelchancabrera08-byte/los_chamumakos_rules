@@ -78,6 +78,20 @@ Y cada turno de Mako debe decir `MAKO SPEAKS ONLY`.
 **Hallazgo:** hay reportes recientes de intercambio de voces incluso usando referencias. El prompting reduce el fallo, pero no garantiza 100%.
 **Regla de ahorro de créditos:** si una misma asignación de voz falla 2–3 veces con el prompt optimizado, dejar de iterar a ciegas. Para producción estable usar Reference-to-Video con `reference_audios` reales/preset si están disponibles, o generar la actuación visual y añadir la voz fuera de cámara en edición.
 
+### 15. Patrón confirmado que SÍ funcionó
+**Resultado:** la versión final con timeline, micro-pausas y speaker ownership explícito funcionó correctamente.
+**Patrón aprobado para reutilizar en todos los videos de este formato:**
+- cámara fija desde POV del interlocutor;
+- solo Mako visible;
+- cliente únicamente como voz masculina fuera de cámara;
+- cada línea dentro de un bloque temporal propio;
+- `MAKO SPEAKS ONLY` en turnos de Mako;
+- `OFF-SCREEN YOUNG ADULT MAN — MALE VOICE ONLY` en turnos del cliente;
+- durante voz del cliente, repetir `Mako remains completely silent`, `Mako's mouth stays fully closed`, `Mako does NOT lip-sync`;
+- micro-pausa de 0.2–0.4 s entre cambios de hablante;
+- para líneas que Grok reasigna con frecuencia, añadir una cláusula especial de propiedad exclusiva de esa frase.
+**Regla maestra:** este patrón pasa a ser el baseline oficial para futuros diálogos Mako + cliente fuera de cámara. No volver al formato simple `CUSTOMER:` / `MAKO:` sin timeline.
+
 ## Regla de mantenimiento
 Cada nuevo error real debe documentarse aquí con:
 - fecha
