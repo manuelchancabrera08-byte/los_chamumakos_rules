@@ -92,6 +92,27 @@ Y cada turno de Mako debe decir `MAKO SPEAKS ONLY`.
 - para líneas que Grok reasigna con frecuencia, añadir una cláusula especial de propiedad exclusiva de esa frase.
 **Regla maestra:** este patrón pasa a ser el baseline oficial para futuros diálogos Mako + cliente fuera de cámara. No volver al formato simple `CUSTOMER:` / `MAKO:` sin timeline.
 
+## 2026-09-15 — EP-002 Mako entrenador / farmear aura
+
+### 16. Mako salió con voz femenina
+**Síntoma:** aunque la voz oficial de Mako es masculina grave, Grok generó voz femenina.
+**Corrección:** reafirmar también EN CADA TURNO DE MAKO `MAKO — OLDER MALE VOICE ONLY, low baritone, never female` y no depender solo del bloque global de voz.
+**Regla nueva:** las dos voces se fijan por turno, no solo al inicio del prompt.
+
+### 17. Mako volvió a decir líneas del cliente
+**Síntoma:** Mako habló durante bloques del cliente.
+**Corrección:** mantener el patrón aprobado del EP-001 sin simplificarlo: timeline, micro-pausas, ownership explícito y boca cerrada durante todo bloque del cliente.
+**Regla nueva:** no reducir las restricciones de speaker lock aunque el episodio cambie de oficio o temática.
+
+### 18. Movimiento incoherente con el diálogo
+**Síntoma:** en un video de `farmear aura`, la actuación física no estaba ligada de forma suficiente a lo que Mako decía.
+**Aprendizaje:** cuando el chiste depende de una acción física, cada línea debe tener su acción sincronizada dentro del mismo bloque temporal.
+**Ejemplo:** al decir `Pecho arriba. Mirada lejos.`, Mako debe elevar suavemente el pecho y dirigir la mirada a un punto lejano durante ESA línea, no antes ni después.
+**Regla nueva:** diálogo y movimiento forman una sola instrucción temporal. No usar gestos genéricos si la frase describe una acción concreta.
+
+### 19. Consulta obligatoria del repositorio antes de generar
+**Regla de proceso:** antes de crear cualquier imagen, guion o prompt de animación, consultar las especificaciones vigentes en GitHub: prompt maestro, reglas de voz, ficha del personaje, continuidad visual y registro de aprendizajes. No trabajar solo desde memoria si el repositorio ya contiene una regla oficial.
+
 ## Regla de mantenimiento
 Cada nuevo error real debe documentarse aquí con:
 - fecha
