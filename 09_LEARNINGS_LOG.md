@@ -67,6 +67,28 @@ Ejemplo aprobado:
 - CUSTOMER = joven, tenor, limpio, brillante, ligeramente nasal.
 - MAKO = 50–60, barítono grave, resonancia de pecho, sereno, confiado, ligeramente ronco/rasposo, picardía de barrio.
 
+### 12. Prompt demasiado declarativo no garantiza ownership
+**Síntoma:** aun con reglas repetidas, Grok asignó `Me voy a quejar` a Mako y volvió a feminizar la voz del cliente.
+**Hallazgo externo:** usuarios de Grok Imagine reportan actualmente el mismo fallo: intercambio de voces, personaje equivocado diciendo líneas y lip-sync del personaje visible para voz off-screen. No es solo un error de redacción; existe inestabilidad del modelo.
+**Aprendizaje:** no seguir agregando párrafos redundantes. Priorizar una gramática temporal simple y explícita.
+
+### 13. Nueva gramática de diálogo para reducir cambios de speaker
+Usar TIEMPOS + NOMBRE FÍSICO DEL HABLANTE, no únicamente etiquetas genéricas `CUSTOMER` / `MAKO`.
+Ejemplo:
+- `[0.0–1.5s] OFF-SCREEN YOUNG MAN speaks: "..." Mako is silent, lips closed.`
+- `[1.5–3.0s] MAKO speaks on camera: "..."`
+
+**Reglas:**
+- Solo un hablante por intervalo.
+- Nunca solapar turnos.
+- Escribir cada acción en orden cronológico.
+- Usar `OFF-SCREEN YOUNG MAN` en vez de depender de la palabra `CUSTOMER`.
+- Repetir `Mako is silent, lips closed` solo en cada turno off-screen, no llenar el prompt de negativas globales.
+- Evitar instrucciones contradictorias o redundantes.
+
+### 14. Estrategia para reducir gasto de créditos
+Si un formato continúa fallando aun con timeline estricto, no insistir indefinidamente en la misma generación. Para máxima fiabilidad, separar la voz off-screen del cliente en postproducción o usar voces de referencia diferentes si la interfaz/API permite `reference_audios` con IDs separados. Un prompt por sí solo no puede garantizar al 100% el speaker binding cuando el modelo está fallando.
+
 ## Regla de mantenimiento
 Cada nuevo error real debe documentarse aquí con:
 - fecha
