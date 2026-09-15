@@ -35,38 +35,51 @@ Cuando haya dos hablantes:
 - Debe sentirse acústicamente como una persona distinta de Mako y de otra generación.
 
 ## Mako — voz oficial
-- Hombre de 50–60 años.
-- Voz inequívocamente masculina.
-- Barítono grave, claramente más bajo que el cliente.
-- Voz serena, tranquila y muy segura.
-- Resonancia de pecho.
-- Ligeramente áspera / ronca / rasposa, sin exageración.
+- Hombre adulto/mayor de 55–65 años.
+- Voz inequívocamente masculina y madura.
+- Barítono bajo, grave, claramente más bajo que el cliente.
+- Resonancia fuerte de pecho.
+- Sereno, tranquilo y muy seguro.
+- Textura gastada por la edad: ligeramente ronca, áspera y rasposa, pero natural.
 - Picardía de barrio.
 - Colmillo.
 - Sarcasmo seco y natural.
-- Sonido de trabajador mexicano experimentado que siempre tiene una respuesta lista.
+- Sonido de señor mexicano experimentado que siempre tiene una respuesta lista.
 - Responde rápido, pero no atropellado.
 - No duda buscando la excusa: la respuesta parece ya preparada.
-- No caricaturesco.
-- No locutor.
-- No villano.
 - No juvenil.
+- No voz limpia de locutor.
+- No falsete.
+- No agudo.
+- No caricaturesco.
 - Nunca voz femenina.
+
+### Frase de lock recomendada EN CADA TURNO DE MAKO
+`MAKO — MATURE MEXICAN MAN, 55–65, MALE VOICE ONLY, DEEP LOW BARITONE, strong chest resonance, naturally rough and slightly hoarse from age, calm and confident, NEVER female, NEVER high-pitched.`
 
 ## Contraste obligatorio
 El modelo debe interpretar dos hombres completamente diferentes:
 - `CUSTOMER` = joven + tenor + limpio + claro + algo nasal.
-- `MAKO` = mayor + barítono grave + pecho + ligeramente ronco + sereno + picardía.
+- `MAKO` = señor 55–65 + barítono bajo + pecho + voz gastada/ronca + sereno + picardía.
 
 No basta con cambiar la actitud: el TIMBRE, REGISTRO, EDAD PERCIBIDA, RESONANCIA y TEXTURA deben ser diferentes.
 
-## Grok Imagine Video 1.5
-Si se usa Reference-to-Video:
-- Cliente = `<AUDIO_0>`
-- Mako = `<AUDIO_1>`
+## Grok Imagine Video 1.5 — regla técnica importante
+La documentación oficial de xAI indica que el método fiable para fijar identidad vocal en Reference-to-Video es usar `reference_audios` con un `voice_id` preset y etiquetarlo en el prompt como `<AUDIO_0>`, `<AUDIO_1>`, etc.
+
+- Hasta 3 voces preset por generación.
+- Los `voice_id` vienen del catálogo oficial de Text-to-Speech.
+- Si NO se están enviando `reference_audios`, escribir `<AUDIO_0>` o `<AUDIO_1>` en texto NO fija realmente una voz.
+- En la interfaz de Grok, si no existe selector de voz/reference audio, la descripción textual de género/edad/timbre es solo una instrucción de mejor esfuerzo y puede fallar.
+- Para ahorrar créditos: si una voz cambia de género repetidamente aun con speaker lock y timeline, no añadir más y más texto indefinidamente; usar voz preset/reference audio si la interfaz/API lo permite, o sustituir la voz en edición.
+
+### Si se usa Reference-to-Video con voces reales/preset
+- Cliente = `<AUDIO_0>`.
+- Mako = `<AUDIO_1>`.
 - Mantener siempre esa asignación.
 - No reutilizar el mismo timbre para ambos.
-- En el prompt escribir explícitamente que `<AUDIO_0>` es una voz masculina humana fuera de cámara y que `<AUDIO_1>` pertenece exclusivamente al personaje visible Mako.
+- En el prompt escribir explícitamente que `<AUDIO_0>` pertenece solo al hombre joven fuera de cámara y `<AUDIO_1>` solo a Mako.
+- Probar previamente las voces en el playground de xAI y elegir para Mako una voz que acústicamente suene masculina, madura, grave y con peso. La documentación describe voces como `leo` (authoritative and strong), `orion` (rich, cinematic, resonant), `atlas` (confident, commanding, reassuring), `rex` (confident and clear), pero xAI no etiqueta su género en esa tabla; escuchar antes de elegir.
 
 ## Ambiente
 - Sin música salvo que el episodio lo requiera.
