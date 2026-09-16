@@ -41,6 +41,10 @@ VOICE B = [CHARACTER].
 Never swap voices or lines.
 Never generate a female voice for either speaker.
 
+VOICE CONTINUITY:
+The voice heard in the FIRST line of each speaker becomes that speaker's FIXED voice identity for the entire clip.
+Do not recast, regenerate, feminize, masculinize, age-shift or change timbre between turns.
+
 WHEN OFF-SCREEN MAN SPEAKS:
 - [CHARACTER] remains completely silent.
 - [CHARACTER]'s mouth stays fully closed.
@@ -55,7 +59,10 @@ VOICE A — OFF-SCREEN YOUNG ADULT MAN:
 MALE ONLY. Human man, 22–30. Clearly masculine light tenor. Clean, bright, clear, smooth, slightly nasal. Neutral Mexican Spanish. Never female or androgynous.
 
 VOICE B — MAKO WHEN CHARACTER IS MAKO:
-MALE ONLY. Older man, 50–60. Clearly masculine low baritone. Deep chest resonance. Grave, serene, calm, confident, slightly rough, lightly hoarse, raspy. Mexican barrio flavor, picardía, dry humor, experienced worker with colmillo. Never female, youthful, cartoonish or announcer-like.
+MATURE MEXICAN MAN, 55–65, MALE VOICE ONLY. Deep low baritone. Strong chest resonance. Clearly mature masculine timbre. Naturally rough and slightly hoarse from age. Calm, serene, confident, streetwise, dry humor, picardía. Never female, feminine, androgynous, youthful, high-pitched, falsetto, cartoonish or announcer-like.
+
+IMPORTANT:
+Repeat the relevant voice identity INSIDE EVERY dialogue block; do not rely only on this global description.
 
 PERFORMANCE:
 Restrained acting. No cartoon exaggeration.
@@ -67,7 +74,7 @@ Do not perform unrelated gestures.
 DIALOGUE TIMELINE — DO NOT REASSIGN:
 
 [0.0–Xs]
-MAKO SPEAKS ONLY:
+MAKO — MATURE MEXICAN MAN, 55–65, MALE VOICE ONLY, DEEP LOW BARITONE, slightly rough/hoarse from age:
 "[LINE]"
 [Describe the exact movement that visually matches this line.]
 
@@ -76,7 +83,7 @@ BRIEF SILENCE.
 No one speaks.
 
 [Xs–Xs]
-OFF-SCREEN YOUNG ADULT MAN — MALE VOICE ONLY:
+OFF-SCREEN YOUNG ADULT MAN — MALE VOICE ONLY, 22–30, LIGHT TENOR:
 "[LINE]"
 Mako remains completely silent.
 Mako's mouth stays fully closed.
@@ -100,8 +107,13 @@ Confident absurdity.
 
 ## Regla especial de movimientos
 Para videos donde el chiste depende de una acción física (ejercicio, pose, baile, oficio, demostración, herramienta, objeto):
+- investigar primero el movimiento real/trend cuando exista una referencia pública;
+- describir físicamente el movimiento, no solo nombrarlo;
 - describir la acción dentro del MISMO bloque temporal de la línea que la justifica;
 - cada acción debe comenzar y terminar de forma físicamente coherente;
 - evitar gestos genéricos que no tengan relación con la frase;
 - mantener el personaje en su soporte físico si el entorno es de escala humana;
 - nunca sacrificar speaker lock por añadir movimiento.
+
+## Regla técnica de voces
+Si se trabaja en Grok Imagine Video 1.5 Reference-to-Video y la interfaz/API permite `reference_audios`, preferir una voz preset seleccionada/escuchada previamente y asignarla con `voice_id`. Los tags `<AUDIO_0>`, `<AUDIO_1>` solo deben usarse cuando realmente existen referencias de audio asociadas. Si no hay selector/reference audio, el control textual de voz es best-effort y no puede garantizar por sí solo el género/timbre.
