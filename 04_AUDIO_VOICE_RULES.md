@@ -25,75 +25,69 @@ Cuando haya dos voces:
 - Claramente más joven y más agudo que Mako.
 
 ## Mako — VOZ OFICIAL ACTUAL
-Mako debe sonar como **un hombre mexicano de barrio de mediana edad, natural, nasal y rasposo**, con picardía y colmillo. La prioridad ya NO es que suene viejo ni muy grave: debe sonar presente, callejero y conversacional.
+La voz objetivo de Mako se basa en la referencia auditiva aprobada por el usuario: **hombre mexicano adulto, fresco, seguro, natural, con picardía tranquila y mucha confianza**. No debe sonar anciano ni exageradamente ronco.
 
 ### Identidad acústica
-- Hombre mexicano de aproximadamente **40–50 años percibidos**.
-- Registro **barítono medio**, masculino y con presencia clara.
-- Cuerpo vocal natural, pero sin exceso de pecho ni profundidad de narrador.
-- **Nasalidad frontal clara**, con resonancia en nariz y máscara facial.
-- Timbre **seco y ligeramente apretado**, no suave ni redondo.
-- Textura **rasposa/gritty**, con un borde seco natural.
-- Evitar abusar de `hoarse`: demasiada ronquera empuja la voz hacia anciano. Preferir **dry gritty edge + slight vocal fry**.
-- Ligero `vocal fry` o quiebre seco al final de algunas frases.
-- Articulación relajada, cotidiana, no perfecta de estudio.
-- Cadencia de barrio mexicano: respuesta rápida, relajada, segura y con colmillo.
-- Picardía audible: parece que siempre sabe algo que el cliente no sabe.
-- Ironía seca y juguetona.
-- Algunas terminaciones pueden caer ligeramente hacia abajo, como si la respuesta fuera obvia.
-- Debe sentirse una voz humana real, imperfecta y vivida, como vendedor, mecánico o vecino que trata con gente todo el día.
+- Hombre mexicano de aproximadamente **35–45 años percibidos**.
+- Registro **barítono medio**, con cuerpo suficiente pero sin profundidad de locutor.
+- Voz claramente masculina, presente y ágil.
+- **Nasalidad frontal moderada y natural**: se percibe hacia nariz y máscara facial, pero sin sonar tapado.
+- Timbre ligeramente seco, con una **rasposidad leve** y natural.
+- Muy poca ronquera; solo textura, nunca voz cansada o envejecida.
+- Articulación relajada y cotidiana.
+- Cadencia mexicana urbana/de barrio, natural y conversacional.
+- Ritmo dinámico: responde rápido, con seguridad, sin atropellar.
+- Picardía tranquila, colmillo y una confianza que suena natural.
+- Ironía seca, pero sin hacer “voz de comedia”.
+- Puede tener una ligera sonrisa en la voz, como si ya supiera la respuesta.
+- Debe sentirse como alguien que habla con clientes todos los días y domina la conversación.
 
 ### Color vocal buscado
-Pensar en: **hombre mexicano de barrio de 40–50, voz media-barítono, bastante nasal hacia adelante, seca, raspada/gritty, con pequeño fry al final, muy natural, pícaro y colmilludo; cero locutor, cero abuelo.**
+Pensar en: **hombre mexicano de 35–45, barítono medio, un poco nasal, ligeramente raspado, fresco, seguro, natural, rápido, con picardía tranquila y colmillo**.
 
 ### NO debe sonar
 - femenino;
-- adolescente o veinteañero;
+- adolescente;
 - anciano;
 - abuelo;
-- barítono demasiado profundo;
-- demasiado ronco/cansado;
-- suave, redondo o cálido de narrador;
-- limpio o pulido de locutor;
-- voz de estudio;
-- cinematográfico;
+- demasiado grave;
+- demasiado ronco;
+- lento o cansado;
+- locutor;
+- narrador de comercial;
 - teatral;
 - caricaturesco;
-- villano;
-- narrador de comercial;
-- como alguien intentando hacer una voz chistosa.
+- cinematográfico;
+- excesivamente pulido de estudio.
 
 ### Descripción recomendada para Google Flow / Custom Voice
-`Mexican neighborhood man, around 40–50 years old. Medium male baritone, not deep. Strong forward nasal placement in the nose and facial mask. Dry, slightly pinched tone with a natural gritty rasp, not elderly hoarseness. Slight vocal fry and a dry crack at some phrase endings. Relaxed everyday Mexican barrio cadence, casual articulation, clipped or softened endings, quick confident replies, sly mischievous undertone, strong picardía and colmillo, dry playful irony. Sounds like a neighborhood mechanic or street vendor who talks to customers all day and always has an answer ready. Natural, imperfect, unpolished, streetwise. Never warm narrator, never smooth studio voice, never elderly, never theatrical, never announcer-like, never overly deep.`
+`Mexican man, around 35–45 years old. Medium male baritone with clear presence, slightly nasal forward resonance, lightly dry and subtly raspy texture, natural everyday Mexican speech, relaxed urban barrio cadence, quick confident delivery, calm but streetwise, sly and mischievous undertone, strong picardía and colmillo, dry irony, subtle smile in the voice, conversational and fresh, like someone who deals with customers every day and always has the answer ready. Clearly masculine, natural and human. Never elderly, never overly deep, never heavily hoarse, never announcer-like, never theatrical, never cartoonish, never polished commercial narrator.`
 
 ### Frase de prueba recomendada
-Antes de usar créditos de video, probar la voz con una línea típica como:
-`Ándele, joven... así mero. ¿Pa' qué le movemos más?`
+`Oiga, joven... yo se lo arreglo. ¿Y si sale mal? Pues lo volvemos a arreglar.`
 
 Criterio de aprobación:
-- la nasalidad debe notarse sin sonar tapado;
-- la textura debe sentirse seca/rasposa, no enferma;
-- la edad debe sentirse 40–50, no abuelo;
-- la picardía debe venir de la cadencia, no de sobreactuar;
-- la voz debe sonar callejera y natural, no profesional de estudio.
+- suena mexicano y natural;
+- edad percibida 35–45;
+- ligera nasalidad audible;
+- ligera textura raspada sin sonar viejo;
+- voz ágil y segura;
+- picardía tranquila, no sobreactuada;
+- cero locutor.
 
 ## Google Flow — estrategia de calibración de voz
-La voz se calibra **fuera del video** antes de gastar créditos de animación.
-
-### Flujo recomendado
-1. Crear o editar la voz personalizada guardada como **Mako**.
-2. Elegir una voz base masculina de mediana edad, de tono medio y con algo de nasalidad; evitar bases demasiado graves o suaves.
+1. Crear/editar la voz personalizada guardada como **Mako**.
+2. Elegir una voz base masculina adulta, media, ágil y natural; evitar voces graves o envejecidas.
 3. Usar la descripción oficial anterior en `Voice Performance`.
-4. Probar exactamente la misma frase corta varias veces.
-5. Cambiar **una sola variable por prueba**: nasalidad, raspado/grit, edad percibida o cadencia. No cambiar todo a la vez.
-6. Aprobar la voz únicamente cuando una prueba aislada ya suene a Mako.
-7. Después usar `@Voice: Mako` en los videos y no volver a redefinir la identidad desde cero.
+4. Probar siempre la misma frase corta.
+5. Cambiar una sola variable por prueba: nasalidad, raspado, edad percibida o cadencia.
+6. Aprobar la voz antes de gastar créditos de video.
+7. Después usar `@Voice: Mako` en los clips.
 
 ## Regla de ahorro de créditos
 - Primero validar la voz con la previsualización de voz.
 - Después generar el video.
 - Si la voz guardada ya está aprobada, NO volver a redefinirla desde cero en cada clip.
-- Si un modelo concreto no permite referencias de voz, la descripción textual es best-effort; no gastar iteraciones indefinidas intentando corregir el timbre solo con más adjetivos.
 
 ## Ambiente y final de audio
 - Sin música salvo que el episodio lo requiera.
