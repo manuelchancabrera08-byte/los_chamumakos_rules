@@ -25,19 +25,26 @@ Cuando haya dos voces:
 - Claramente más joven y más agudo que Mako.
 
 ## Mako — VOZ OFICIAL ACTUAL
-Mako NO debe sonar como locutor ni como una voz genérica grave. Debe sonar como **un señor mexicano de barrio con picardía**.
+Mako debe sonar como **un señor mexicano de barrio con picardía**, no como locutor ni como una voz genérica grave.
 
 ### Identidad acústica
 - Hombre mexicano de aproximadamente **60–70 años percibidos**.
-- Registro **barítono medio-bajo**, con peso de pecho pero sin exagerar a voz de tráiler.
-- Timbre envejecido y vivido.
-- **Ligeramente nasal**.
-- **Naturalmente áspero, ronquito y algo rasposo**, como una voz gastada por la edad.
+- Registro **barítono medio-bajo**, con pecho natural, nunca voz de tráiler.
+- Timbre envejecido, vivido y de calle.
+- **Nasalidad perceptible pero natural**, con resonancia ligeramente adelantada hacia nariz y máscara facial.
+- **Naturalmente áspero, ronquito y ligeramente rasposo**, como una voz gastada por la edad.
 - Cadencia relajada de barrio mexicano.
-- Picardía, colmillo y seguridad callejera.
-- Un toque de ironía seca y juguetona, pero sin actuar el chiste.
-- Habla como un señor que ya tiene la respuesta lista y considera completamente normal lo absurdo que está diciendo.
-- Puede arrastrar levemente alguna sílaba o cortar finales de forma natural, sin caricatura.
+- Picardía audible: parece que siempre sabe algo que el cliente no sabe.
+- Colmillo, seguridad callejera y una sonrisa apenas perceptible en la voz, sin convertirla en caricatura.
+- Ironía seca y juguetona.
+- Frases dichas con naturalidad, como conversación real de calle, no actuación de comedia.
+- Ritmo ágil pero tranquilo: responde rápido porque ya tiene la excusa lista.
+- Puede arrastrar levemente una sílaba, cortar algún final o meter una inflexión pícara en palabras como `joven`, `jefe`, `ándele`, `mire`, sin exagerar.
+
+### Color vocal buscado
+Pensar en: **señor de barrio mayor, colmilludo, algo nasal, ronquito, relajado, pícaro, con seguridad de quien siempre tiene una salida**.
+
+No debe sonar agresivo ni delincuencial. La picardía viene de la seguridad, la ironía y la cadencia, no de gritar ni sobreactuar.
 
 ### NO debe sonar
 - femenino;
@@ -51,7 +58,13 @@ Mako NO debe sonar como locutor ni como una voz genérica grave. Debe sonar como
 - como alguien intentando hacer una voz chistosa.
 
 ### Descripción recomendada para Google Flow / Custom Voice
-`Older Mexican man, around 60–70, medium-low baritone, slightly nasal, naturally rough and lightly hoarse from age, lived-in neighborhood voice, relaxed Mexican barrio cadence, sly playful undertone, dry irony, streetwise confidence, warm but colmilludo, conversational and natural, never theatrical, never announcer-like, never youthful.`
+`Older Mexican neighborhood man, around 60–70, medium-low baritone with natural chest weight, clearly nasal-forward resonance, lived-in and weathered timbre, naturally rough, lightly hoarse and slightly raspy from age, relaxed Mexican barrio cadence, sly mischievous undertone, streetwise confidence, dry playful irony, subtle smile in the voice, quick answers as if he always already knows the excuse, conversational and natural, warm but colmilludo, never theatrical, never announcer-like, never youthful, never overly deep or cinematic.`
+
+### Frase de prueba recomendada
+Antes de usar créditos de video, probar la voz con una línea típica como:
+`Ándele, joven... así mero. ¿Pa' qué le movemos más?`
+
+Si esa frase no suena a señor de barrio mayor, nasal, ronquito y pícaro, NO aprobar todavía la voz.
 
 ## Google Flow — referencia de voz
 La vía preferida para continuidad vocal es usar **Ingredients > Voices** y una voz de un solo hablante.
@@ -59,11 +72,9 @@ La vía preferida para continuidad vocal es usar **Ingredients > Voices** y una 
 ### Flujo recomendado
 1. Crear una voz personalizada y guardarla con el nombre **Mako**.
 2. Elegir una voz base masculina madura que ya se acerque al timbre deseado.
-3. En `Voice Performance`, pegar/adaptar la descripción oficial anterior.
+3. En `Voice Performance`, usar la descripción oficial anterior.
 4. Probarla con una frase corta típica de Mako antes de gastar créditos de video.
 5. En los prompts de video, referenciarla como `@Voice: Mako` cuando Flow lo permita.
-
-Google Flow permite crear voces personalizadas y describir su rendimiento vocal; las referencias de voz funcionan en generaciones que usan Ingredients. Por eso, para Mako se debe preferir una voz guardada sobre intentar reinventar el timbre solo con adjetivos en cada prompt.
 
 ## Regla de ahorro de créditos
 - Primero validar la voz con la previsualización de voz.
