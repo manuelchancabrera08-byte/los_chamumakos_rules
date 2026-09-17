@@ -123,7 +123,7 @@ Y cada turno de Mako debe decir `MAKO SPEAKS ONLY`.
 **Regla de ahorro de créditos:** en UI sin selector de voz, el prompt textual es best-effort. Si el género de Mako vuelve a fallar reiteradamente, usar Reference-to-Video con preset voice si está disponible o reemplazar la voz en edición.
 
 ### 22. Movimiento Six Seven investigado
-**Hallazgo:** el gesto viral `six seven / 6-7` se reconoce por las dos manos abiertas a la altura del pecho, como una balanza: una mano sube mientras la otra baja y luego alternan. Fuentes recientes describen que funciona mejor con movimientos rápidos y no demasiado altos.
+**Hallazgo:** el gesto viral `six seven / 6-7` se reconoce por las dos manos abiertas a la altura del pecho, como una balanza: una mano sube mientras la otra baja y luego alternan.
 **Aplicación EP-002:** cuando Mako diga `Farmear aura`, ejecutar durante esa misma frase el gesto Six Seven: codos cerca del torso, ambas manos abiertas a la altura del pecho, palmas orientadas hacia arriba o ligeramente planas según la referencia, alternando arriba/abajo de forma corta y rítmica 2–3 veces; rostro serio, párpados a medio ojo, sin sonreír.
 **Regla nueva:** cuando se use una pose/trend real, investigar primero el gesto y describirlo físicamente; no inventar una pose genérica.
 
@@ -140,6 +140,35 @@ Y cada turno de Mako debe decir `MAKO SPEAKS ONLY`.
 ### 25. Límite confirmado: prompt textual no fija identidad vocal
 **Corrección de proceso:** no prometer que una descripción como `old male, deep baritone, hoarse` va a resolver por sí sola la edad/timbre en la UI de Grok. Según la documentación investigada, la fijación fuerte de identidad vocal requiere `reference_audios` + `voice_id` en Reference-to-Video. En la UI sin esa función, la voz descrita por texto sigue siendo best-effort y puede salir joven.
 **Regla de ahorro de créditos:** después de un nuevo fallo de edad/timbre en UI, no seguir aumentando adjetivos ni longitud del prompt. Cambiar a voz referenciada/preset o separar el audio del video.
+
+## 2026-09-17 — Migración de producción a Google Flow
+
+### 26. Google Flow pasa a ser el motor principal
+**Cambio:** los clips nuevos se producen en Google Flow y el objetivo operativo del proyecto pasa a ser aproximadamente 10 segundos por clip.
+**Regla nueva:** el guion debe diseñarse desde el inicio para ese tiempo. No escribir un diálogo largo y luego intentar comprimirlo.
+
+### 27. Nueva definición aprobada de la voz de Mako
+**Observación del usuario:** la voz anterior sonaba demasiado genérica/grave y no tenía suficiente identidad de viejo de barrio.
+**Nueva dirección:** Mako debe sonar como un señor mexicano de unos 60–70 años percibidos, barítono medio-bajo, ligeramente nasal, voz vivida y gastada, naturalmente áspera/ronquita, cadencia relajada de barrio, picardía, colmillo e ironía seca.
+**Regla nueva:** no definirlo simplemente como `deep old male`. La identidad central es `señor de barrio con picardía`, natural y conversacional, no locutor.
+
+### 28. Google Flow permite referencias de voz
+**Hallazgo oficial de Google Flow:** en generaciones con Ingredients se pueden añadir referencias de voz, crear una voz personalizada, describir su Voice Performance y referenciarla mediante `@Voice`.
+**Aplicación:** crear una voz personalizada guardada como `Mako`, probarla primero con el preview de voz y reutilizarla en clips posteriores. Esto debe preferirse a intentar fijar el timbre únicamente con texto en cada generación.
+**Regla de ahorro de créditos:** validar la voz antes del video.
+
+### 29. Nuevo ADN de guion confirmado por muestras
+**Observación:** el estilo buscado funciona mejor cuando una situación normal recibe una respuesta absurda dicha con absoluta seriedad. El personaje no “cuenta” el chiste ni se ríe.
+**Regla nueva:** pregunta/reclamo normal → respuesta breve → objeción → Mako redobla la lógica absurda → remate seco. No es obligatorio usar todos los pasos si el remate llega antes.
+**Para 10 s:** usar normalmente 4–6 intervenciones breves, una sola idea cómica y cero explicación innecesaria.
+
+### 30. Mako debe estar vivo aunque permanezca en el mismo lugar
+**Observación:** Mako puede verse demasiado rígido si solo mueve la boca o las manos.
+**Regla nueva:** permitir cambios sutiles de peso, micro-movimientos de pies/talones, hombros, cabeza y postura, sin desplazarse ni abandonar su soporte. Toda acción principal sigue ligada al diálogo.
+
+### 31. Acción reconocible, no pose aleatoria
+**Problema:** al nombrar un trend como `farmear aura`, el motor puede inventar una pose genérica.
+**Regla nueva:** investigar el movimiento y describir físicamente la acción. En el episodio del gimnasio, las palmas, altura de manos, alternancia arriba/abajo, ritmo, postura y movimiento de pies deben especificarse; no confiar únicamente en el nombre del trend.
 
 ## Regla de mantenimiento
 Cada nuevo error real debe documentarse aquí con:
