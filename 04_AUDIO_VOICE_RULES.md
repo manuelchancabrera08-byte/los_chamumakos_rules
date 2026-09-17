@@ -25,34 +25,39 @@ Cuando haya dos voces:
 - Claramente más joven y más agudo que Mako.
 
 ## Mako — VOZ OFICIAL ACTUAL
-Mako debe sonar como **un hombre mexicano de barrio con picardía y colmillo**, con presencia vocal clara, no como locutor ni como una voz genérica grave.
+Mako debe sonar como **un hombre mexicano de barrio de mediana edad, natural, nasal y rasposo**, con picardía y colmillo. La prioridad ya NO es que suene viejo ni muy grave: debe sonar presente, callejero y conversacional.
 
 ### Identidad acústica
-- Hombre mexicano de aproximadamente **45–55 años percibidos**.
-- Registro **barítono medio**, masculino, presente y con cuerpo, pero nunca bajo extremo ni voz de tráiler.
-- **Nasalidad perceptible y frontal**, con la resonancia colocada hacia nariz y máscara facial.
-- Timbre vivido y de calle, pero más joven y presente que una voz de anciano.
-- **Ligera aspereza y ronquera natural**, solo lo suficiente para dar textura; no debe sonar cansado ni frágil.
+- Hombre mexicano de aproximadamente **40–50 años percibidos**.
+- Registro **barítono medio**, masculino y con presencia clara.
+- Cuerpo vocal natural, pero sin exceso de pecho ni profundidad de narrador.
+- **Nasalidad frontal perceptible**, con la resonancia colocada hacia nariz y máscara facial.
+- Voz **seca, ligeramente apretada/pinzada y un poco áspera**.
+- **Rasposidad ligera y ronquera natural**, especialmente al final de algunas frases.
+- Puede tener un toque mínimo de vocal fry / quiebre seco al cerrar ciertas palabras, sin exagerar.
+- Debe sentirse una voz humana real, no pulida: un poco imperfecta, vivida y de calle.
 - Cadencia relajada de barrio mexicano.
 - Picardía audible: parece que siempre sabe algo que el cliente no sabe.
 - Colmillo, seguridad callejera y una sonrisa apenas perceptible en la voz, sin convertirla en caricatura.
 - Ironía seca y juguetona.
-- Frases dichas con naturalidad, como conversación real de calle, no actuación de comedia.
 - Ritmo ágil pero tranquilo: responde rápido porque ya tiene la excusa lista.
-- Puede arrastrar levemente una sílaba, cortar algún final o meter una inflexión pícara en palabras como `joven`, `jefe`, `ándele`, `mire`, sin exagerar.
+- Articulación ligeramente relajada, como conversación cotidiana; no dicción perfecta de estudio.
+- Puede arrastrar levemente una sílaba, cortar algún final o meter una inflexión pícara en `joven`, `jefe`, `ándele`, `mire`, sin exagerar.
 
 ### Color vocal buscado
-Pensar en: **hombre de barrio mexicano de mediana edad, nasal, barítono, ronquito ligero, pícaro, colmilludo, seguro, con presencia y con la sensación de que ya se las sabe todas**.
+Pensar en: **hombre mexicano de barrio de unos 40–50, barítono medio, nasal hacia adelante, seco, un poco rasposo, muy natural, pícaro y colmilludo; voz de vendedor/mecánico/vecino que trata con clientes todo el día y siempre tiene una salida**.
 
-No debe sonar agresivo ni delincuencial. La picardía viene de la seguridad, la ironía y la cadencia, no de gritar ni sobreactuar.
+La picardía viene de la seguridad, la ironía, la nasalidad y la cadencia, no de hacer una voz chistosa.
 
 ### NO debe sonar
 - femenino;
 - adolescente o veinteañero;
-- anciano frágil;
-- abuelo cansado;
-- limpio de locutor;
-- demasiado profundo/cinematográfico;
+- anciano;
+- abuelo;
+- barítono demasiado profundo;
+- limpio o pulido de locutor;
+- voz de estudio;
+- cinematográfico;
 - teatral;
 - caricaturesco;
 - villano;
@@ -60,13 +65,13 @@ No debe sonar agresivo ni delincuencial. La picardía viene de la seguridad, la 
 - como alguien intentando hacer una voz chistosa.
 
 ### Descripción recomendada para Google Flow / Custom Voice
-`Mexican neighborhood man, around 45–55 years old, medium male baritone with clear presence and natural chest support, noticeable nasal-forward resonance placed in the nose and front of the face, slightly rough and lightly hoarse but not elderly, lived-in street voice, relaxed Mexican barrio cadence, sly mischievous undertone, strong picardía and colmillo, dry playful irony, subtle smirk in the voice, quick confident answers as if he already knows the excuse, conversational and natural, streetwise and present, never theatrical, never announcer-like, never youthful, never elderly, never overly deep or cinematic.`
+`Mexican neighborhood man, around 40–50 years old, medium male baritone with clear vocal presence, forward nasal resonance placed in the nose and front of the face, dry slightly pinched tone, naturally rough with a light raspy edge and mild hoarseness, slightly imperfect lived-in street voice, relaxed Mexican barrio cadence, casual articulation, subtle vocal fry at some phrase endings, sly mischievous undertone, strong picardía and colmillo, dry playful irony, quick confident answers as if he already knows the excuse, conversational, natural and unpolished, like a neighborhood vendor or mechanic who talks to customers all day; never elderly, never announcer-like, never polished studio voice, never theatrical, never overly deep or cinematic.`
 
 ### Frase de prueba recomendada
 Antes de usar créditos de video, probar la voz con una línea típica como:
 `Ándele, joven... así mero. ¿Pa' qué le movemos más?`
 
-Si esa frase no suena a hombre mexicano de barrio de mediana edad, nasal, barítono, pícaro y colmilludo, NO aprobar todavía la voz.
+Si esa frase no suena nasal, seca, ligeramente rasposa, mexicana, natural, pícara y de barrio, NO aprobar todavía la voz.
 
 ## Google Flow — referencia de voz
 La vía preferida para continuidad vocal es usar **Ingredients > Voices** y una voz de un solo hablante.
@@ -84,8 +89,10 @@ La vía preferida para continuidad vocal es usar **Ingredients > Voices** y una 
 - Si la voz guardada ya está aprobada, NO volver a redefinirla desde cero en cada clip.
 - Si un modelo concreto no permite referencias de voz, la descripción textual es best-effort; no gastar iteraciones indefinidas intentando corregir el timbre solo con más adjetivos.
 
-## Ambiente
+## Ambiente y final de audio
 - Sin música salvo que el episodio lo requiera.
 - Ambiente realista y discreto.
 - Sonido de locación natural.
 - No introducir sonidos cuya fuente contradiga lo visible.
+- **No generar risas, chuckles, giggles, carcajadas, risas de fondo, audience laughter ni reacción cómica automática**, salvo que el guion las pida de forma explícita.
+- Después de la última línea no añadir vocalizaciones, risitas ni ad-libs inventados.
