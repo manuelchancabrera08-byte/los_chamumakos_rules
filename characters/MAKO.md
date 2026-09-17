@@ -34,25 +34,32 @@ No reutilizar ese diseño en nuevas imágenes, prompts o character sheets.
 
 ## Voz
 - Masculina.
-- 50–60 años.
-- Barítono grave.
+- 55–65 años percibidos.
+- Barítono bajo y grave.
+- Resonancia fuerte de pecho.
 - Serena.
 - Confiada.
-- Ligeramente rasposa.
+- Ligeramente ronca, rasposa y gastada por la edad.
 - Barrio mexicano natural.
 - Humor seco.
 - Respuesta rápida.
+- Debe sonar a señor de barrio con colmillo, no a joven ni a locutor.
 
 ## Lenguaje
-Puede usar naturalmente:
+Puede usar naturalmente y variar según contexto:
 - jefe
 - joven
-- pos
+- güero
+- carnal
+- compa
+- amigo
 - mire
+- pos
 - pa' qué
 - ándele
+- órale
 
-Sin exagerarlo.
+No repetir siempre `jefe`. Alternar con naturalidad según escena. Evitar saturar de modismos o sonar actuado.
 
 ## Regla
 **Mako nunca se queda sin respuesta.**
