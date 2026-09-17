@@ -3,6 +3,9 @@
 ## ID
 `EP-___`
 
+## Motor
+Google Flow
+
 ## Personaje
 - [ ] Chapu
 - [ ] Mako
@@ -15,15 +18,24 @@
 
 ## Por qué es reconocible para el público
 
+## Idea cómica principal
+
 ## Remate
 
-## Imagen de referencia
+## Imagen / ingrediente de referencia
 Archivo:
 
-## Clip 1 — 15 s
+## Voz
+- Voz de Mako aprobada: Sí / No
+- Nombre de voz en Flow: `Mako`
+- Referencia usada con `@Voice`: Sí / No
+
+## Clip 1 — 10 s
 ### Diálogo
 
-### Prompt
+### Acción física clave
+
+### Prompt Flow
 Archivo:
 
 ### Resultado
@@ -33,10 +45,12 @@ Archivo:
 
 ### Aprendizajes
 
-## Clip 2 — 15 s
+## Clip 2 — 10 s
 ### Diálogo
 
-### Prompt
+### Acción física clave
+
+### Prompt Flow
 Archivo:
 
 ### Resultado
@@ -50,4 +64,6 @@ Archivo:
 - [ ] Continuidad aprobada
 - [ ] Voz aprobada
 - [ ] Humor aprobado
+- [ ] Movimientos coherentes con diálogo
 - [ ] Branding aprobado
+- [ ] No se excedió el diálogo para 10 s
