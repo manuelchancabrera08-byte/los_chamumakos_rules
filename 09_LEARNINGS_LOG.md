@@ -127,6 +127,20 @@ Y cada turno de Mako debe decir `MAKO SPEAKS ONLY`.
 **Aplicación EP-002:** cuando Mako diga `Farmear aura`, ejecutar durante esa misma frase el gesto Six Seven: codos cerca del torso, ambas manos abiertas a la altura del pecho, palmas orientadas hacia arriba o ligeramente planas según la referencia, alternando arriba/abajo de forma corta y rítmica 2–3 veces; rostro serio, párpados a medio ojo, sin sonreír.
 **Regla nueva:** cuando se use una pose/trend real, investigar primero el gesto y describirlo físicamente; no inventar una pose genérica.
 
+### 23. Realismo de celular sin destruir continuidad
+**Síntoma:** el video todavía puede verse demasiado limpio/cinematográfico.
+**Corrección:** pedir estética de celular real mediante imperfecciones ópticas y de sensor, NO mediante movimiento espacial de cámara: exposición automática leve, rango dinámico limitado, balance de blancos imperfecto, enfoque con respiración mínima, ruido fino de sensor, compresión moderada y audio de micrófono de celular.
+**Regla nueva:** `smartphone realism` no significa handheld libre. Mantener encuadre fijo y usar imperfecciones de imagen/sonido para vender realismo.
+
+### 24. Última frase con audio pero sin lip-sync
+**Síntoma:** Mako pronuncia una línea final, pero deja la boca quieta durante parte o toda la frase.
+**Corrección:** en cada bloque de Mako, especialmente el último, declarar que la articulación comienza con el primer fonema y continúa sin interrupción hasta la última sílaba; la boca debe cerrar únicamente DESPUÉS de terminar la última palabra.
+**Regla nueva:** no basta con `only Mako's mouth moves`. Para líneas críticas usar `continuous visible articulation from first phoneme to final syllable; do not stop mouth movement before the final word is fully spoken`.
+
+### 25. Límite confirmado: prompt textual no fija identidad vocal
+**Corrección de proceso:** no prometer que una descripción como `old male, deep baritone, hoarse` va a resolver por sí sola la edad/timbre en la UI de Grok. Según la documentación investigada, la fijación fuerte de identidad vocal requiere `reference_audios` + `voice_id` en Reference-to-Video. En la UI sin esa función, la voz descrita por texto sigue siendo best-effort y puede salir joven.
+**Regla de ahorro de créditos:** después de un nuevo fallo de edad/timbre en UI, no seguir aumentando adjetivos ni longitud del prompt. Cambiar a voz referenciada/preset o separar el audio del video.
+
 ## Regla de mantenimiento
 Cada nuevo error real debe documentarse aquí con:
 - fecha
