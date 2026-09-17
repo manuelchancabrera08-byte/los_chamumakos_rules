@@ -25,7 +25,8 @@ Para Mako:
 - referenciarla como `@Voice: Mako`;
 - no reinventar la voz en cada clip;
 - usar la descripción oficial de `04_AUDIO_VOICE_RULES.md` para Voice Performance;
-- la identidad central no es simplemente `old male`: debe ser **señor mexicano de barrio, nasal, ronquito, pícaro y colmilludo**.
+- la identidad central actual es **hombre mexicano de barrio de mediana edad, barítono, nasal, con presencia, ronquito ligero, pícaro y colmilludo**;
+- evitar empujarlo a una voz de anciano, abuelo o barítono excesivamente profundo.
 
 ## Estructura recomendada del prompt
 
@@ -43,7 +44,7 @@ Mako is calm, confident and colmilludo. He never looks surprised by his own answ
 
 VOICE:
 @Voice: Mako
-Mako sounds like an older Mexican neighborhood man, around 60–70, medium-low baritone with natural chest weight, clearly nasal-forward resonance, lived-in and weathered timbre, naturally rough, lightly hoarse and slightly raspy from age, relaxed Mexican barrio cadence, sly mischievous undertone, streetwise confidence, dry playful irony, subtle smile in the voice, quick answers as if he already knows the excuse. Conversational and natural, warm but colmilludo, never theatrical, never announcer-like, never youthful, never overly deep or cinematic.
+Mako sounds like a Mexican neighborhood man around 45–55, medium male baritone with clear presence and natural chest support, noticeable nasal-forward resonance, slightly rough and lightly hoarse but not elderly, lived-in street voice, relaxed Mexican barrio cadence, sly mischievous undertone, strong picardía and colmillo, dry playful irony, subtle smirk in the voice, quick confident answers as if he already knows the excuse. Conversational and natural, streetwise and present, never theatrical, never announcer-like, never elderly, never overly deep or cinematic.
 
 OFF-SCREEN CUSTOMER:
 Young adult Mexican man, 22–30, masculine light tenor, clean and clear voice. Customer remains completely off-screen.
@@ -56,8 +57,8 @@ Keep dialogue concise enough to play naturally within about 10 seconds. Short pa
 
 ACTION + DIALOGUE:
 Every important physical action must match the exact line being spoken OR happen immediately after a line when the line is introducing the action.
-If Mako says something like `El primer ejercicio es este.`, he should finish the sentence and then immediately demonstrate the exercise with no dead pause.
-If the line names a pose, trend, exercise, object or gesture, perform a recognizable physical action; never substitute a random pose.
+If Mako says something like `Este es el siguiente ejercicio.`, he should finish the sentence and then immediately enter the exact pose with no dead pause.
+Never use labels like `aura pose` by themselves. Describe the full biomechanics of the pose.
 
 DIALOGUE:
 [Write 4–6 short turns maximum, or fewer if the joke lands earlier.]
@@ -75,10 +76,11 @@ Si una escena depende de una referencia cultural o movimiento reconocible:
 2. describir la biomecánica del movimiento en el prompt;
 3. sincronizarlo con la frase exacta o hacerlo inmediatamente después si la frase introduce la demostración;
 4. evitar decir solo el nombre del trend esperando que Flow lo interprete correctamente;
-5. mantener los pies y el peso corporal vivos y naturales sin desplazar a Mako innecesariamente.
+5. mantener los pies y el peso corporal vivos y naturales sin desplazar a Mako innecesariamente;
+6. si Flow ignora una pose genérica, sustituirla por una postura corporal completa con pies, rodillas, torso, brazos, manos, cabeza y mirada definidos.
 
-### Ejemplo aprobado — farmear aura / Six-Seven
-Después de `El primer ejercicio es este.` Mako entra inmediatamente en la pose: ambas manos abiertas, palmas hacia arriba a la altura del pecho; una mano sube mientras la otra baja y luego alternan en rango corto; cuerpo serio, mirada a medio ojo, pequeño cambio de peso en los pies, sin desplazarse.
+### Ejemplo operativo — pose de aura tipo power-up
+Después de `Este es el siguiente ejercicio.` Mako entra inmediatamente en una pose de poder muy marcada: ambos pies separados sobre el soporte, uno apenas adelantado; rodillas ligeramente flexionadas; pecho elevado; torso firme; ambos codos doblados y llevados hacia atrás; puños cerrados colocados a ambos lados de la cadera; hombros abajo; barbilla ligeramente baja; mirada intensa y lejana con párpados a medio ojo. Mantiene la pose como si estuviera acumulando energía, con tensión contenida y un pequeño cambio de peso, sin desplazarse.
 
 ## Regla de ahorro de créditos
 - Validar primero la imagen de referencia.
