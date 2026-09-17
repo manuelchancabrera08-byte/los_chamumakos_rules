@@ -13,55 +13,62 @@ Trabajador, técnico, vendedor, empleado, entrenador o dueño vivo.
 - No es mafioso.
 - No es villano.
 - Trata sus respuestas absurdas como soluciones totalmente normales.
+- No habla como un pícaro acelerado: puede tomarse un microbeat natural antes de responder, sin parecer que está inventando una excusa.
+- Su ironía es seca y tranquila. Nunca actúa el chiste.
 
 ## Apariencia oficial
-- Mono pequeño y realista, NO tamaño humano.
+- Mono capuchino pequeño y REALISTA, NO tamaño humano.
 - Aproximadamente la mitad de la altura de una persona adulta cuando está de pie.
-- Debe conservar proporciones animales realistas.
+- Debe conservar anatomía y proporciones animales realistas.
+- Debe verse primero como un mono real haciendo cosas humanas, nunca como un humano vestido de mono.
 - Rasgo facial clave: pelaje oscuro tipo capucha/corona sobre la parte superior de la cabeza y frente.
 - Expresión habitual: serena, segura y ligeramente escéptica.
 - LOS PÁRPADOS DEBEN ESTAR SIEMPRE A MEDIO OJO / SEMICERRADOS.
-- Mirada tranquila, con colmillo.
+- Mirada tranquila, con confianza y colmillo.
 - Cola, manos y pies anatómicamente coherentes y consistentes.
+- El pelaje puede verse ligeramente sucio o vivido cuando el oficio/escenario lo justifique; evitar acabado demasiado limpio, plástico o de mascota.
 
 ## Escala en escenarios humanos
 Mako no debe verse nunca como un humano de estatura completa.
 Cuando interactúe con objetos humanos, usar un soporte físico lógico si es necesario: banco, caja, silla, cajón pliométrico, mesa, plataforma o mostrador.
 
-## Voz oficial
-Mako debe sonar como **un hombre mexicano adulto, fresco, seguro y natural, con picardía tranquila y colmillo**.
+## Voz oficial actual
+Mako debe sonar como **un hombre mexicano adulto de barrio, serio, sereno, raspado, natural y con mucho colmillo**.
 
 - Masculina.
-- Aproximadamente 35–45 años percibidos.
-- Barítono medio.
-- Presencia clara, sin ser demasiado grave.
-- Ligera nasalidad frontal natural.
-- Timbre un poco seco y ligeramente raspado.
-- Muy poca ronquera; nunca voz de anciano.
-- Cadencia mexicana urbana/de barrio.
-- Ritmo ágil y seguro.
-- Picardía tranquila.
-- Ironía seca.
-- Ligera sonrisa en la voz.
-- Responde como alguien que ya tiene la salida lista.
+- Aproximadamente 40–50 años percibidos.
+- Voz media; no extremadamente grave.
+- No enfatizar barítono profundo ni voz de locutor.
+- Nasalidad frontal ligera y natural.
+- Timbre claramente seco y raspado, con textura ligeramente granulada y gastada.
+- Puede tener un toque ahumado/áspero, sin convertirse en voz de anciano.
+- Cadencia mexicana urbana/de barrio, relajada e informal.
+- Ritmo calmado y sereno; no acelerado.
+- Puede dejar micro-pausas naturales de aproximadamente 0.3–0.5 s cuando una pregunta merece una reacción seca.
+- Articulación cotidiana e imperfecta: consonantes ligeramente suavizadas y finales algo relajados cuando suene natural.
+- Picardía tranquila, colmillo e ironía seca.
+- Suena como mecánico, vendedor de tianguis, comerciante o locatario que trata con clientes todo el día.
 - Nunca locutor.
 - Nunca teatral.
 - Nunca caricaturesco.
-- Nunca excesivamente grave o cinematográfico.
+- Nunca voz genérica de IA para redes.
+- Nunca excesivamente grave, limpia o cinematográfica.
 
-### Descriptor oficial para Google Flow
-`Mexican man, around 35–45 years old. Medium male baritone with clear presence, slightly nasal forward resonance, lightly dry and subtly raspy texture, natural everyday Mexican speech, relaxed urban barrio cadence, quick confident delivery, calm but streetwise, sly and mischievous undertone, strong picardía and colmillo, dry irony, subtle smile in the voice, conversational and fresh, like someone who deals with customers every day and always has the answer ready. Clearly masculine, natural and human. Never elderly, never overly deep, never heavily hoarse, never announcer-like, never theatrical, never cartoonish, never polished commercial narrator.`
+### Descriptor recomendado para Google Flow
+`Real Mexican neighborhood man, around 40–50 years old. Medium male speaking voice, not overly deep. Clearly raspy, dry, slightly grainy and rough around the edges, with a subtle worn/smoky texture. Slight nasal-forward resonance without sounding congested. Calm, serene, relaxed, grounded and unhurried. Informal Mexican barrio cadence, natural imperfect diction, softened consonants and slightly relaxed endings when appropriate. Streetwise, strong colmillo, quiet picardía and dry irony. Sounds like a neighborhood mechanic, tianguis vendor, market stall owner or local shopkeeper who talks to customers all day. Serious and matter-of-fact; never performs the joke. Not a generic AI narrator, not TikTok/social-media voice, not radio/commercial/podcast voice, not theatrical, not elderly, not polished, not excessively deep.`
 
 ### Referencia de voz
-Cuando Google Flow permita Ingredients > Voices, usar una voz personalizada guardada como **Mako** y referenciarla como `@Voice: Mako`.
+Si Google Flow ofrece una voz guardada aprobada para Mako, reutilizarla. Si la interfaz no permite referencias de voz, definir la identidad mediante el descriptor anterior y mantener exactamente la misma descripción entre clips.
 
 ## Movimiento corporal
 Mako NO debe parecer estatua.
 Puede tener pequeños cambios de peso, micro-movimientos de talón o punta, ajustes mínimos de pies, movimiento natural de hombros, manos, cabeza, respiración y postura.
 
+Sus movimientos deben respetar biomecánica de mono real: peso, equilibrio, inercia y contacto con superficies.
+
 No caminar sin motivo. No abandonar su soporte.
 
-Si una línea introduce una acción, la acción debe ocurrir con timing lógico. Ejemplo: `Este es el siguiente ejercicio.` → Mako termina la frase y enseguida entra en la pose.
+Si una línea introduce una acción, la acción debe ocurrir con timing lógico. Ejemplo: `Siguiente ejercicio.` → Mako termina la frase, resuelve cualquier objeto que tenga en la mano de forma física y visible, y luego entra en la pose.
 
 ## Lenguaje
 Puede usar naturalmente y variar según contexto:
@@ -80,4 +87,4 @@ Puede usar naturalmente y variar según contexto:
 No saturar de modismos ni sonar actuado.
 
 ## Regla
-**Mako nunca se queda sin respuesta.**
+**Mako nunca se queda sin respuesta. Su humor nace de tratar una lógica absurda como algo perfectamente normal.**
