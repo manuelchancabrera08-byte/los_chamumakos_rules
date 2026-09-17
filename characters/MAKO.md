@@ -1,7 +1,7 @@
-# MAKO — ficha narrativa y visual oficial
+# MAKO — ficha narrativa, visual y vocal oficial
 
 ## Rol
-Trabajador, técnico, vendedor, empleado o dueño vivo.
+Trabajador, técnico, vendedor, empleado, entrenador o dueño vivo.
 
 ## Personalidad
 - Sereno.
@@ -12,6 +12,7 @@ Trabajador, técnico, vendedor, empleado o dueño vivo.
 - Nunca parece nervioso.
 - No es mafioso.
 - No es villano.
+- Trata sus respuestas absurdas como soluciones totalmente normales.
 
 ## Apariencia oficial
 - Mono pequeño y realista, NO tamaño humano.
@@ -32,18 +33,49 @@ La escala del entorno debe dejar claro que Mako es un mono pequeño.
 El personaje antiguo con copete/mohawk o apariencia distinta al Mako oficial YA NO DEBE USARSE como referencia de Mako ni de Chapu.
 No reutilizar ese diseño en nuevas imágenes, prompts o character sheets.
 
-## Voz
+## Voz oficial
+Mako debe sonar como **un señor mexicano de barrio con colmillo**, no como un locutor ni como una voz genérica grave.
+
 - Masculina.
-- 55–65 años percibidos.
-- Barítono bajo y grave.
-- Resonancia fuerte de pecho.
-- Serena.
-- Confiada.
-- Ligeramente ronca, rasposa y gastada por la edad.
-- Barrio mexicano natural.
-- Humor seco.
-- Respuesta rápida.
-- Debe sonar a señor de barrio con colmillo, no a joven ni a locutor.
+- Aproximadamente 60–70 años percibidos.
+- Barítono medio-bajo.
+- Peso de pecho natural.
+- Ligera nasalidad.
+- Voz vivida, algo gastada por la edad.
+- Naturalmente áspera, ronquita y ligeramente rasposa.
+- Cadencia relajada de barrio mexicano.
+- Picardía audible.
+- Ironía seca, juguetona y segura.
+- Respuesta rápida, pero tranquila.
+- Debe sonar como un señor que ya conoce todos los trucos y siempre tiene una salida.
+- Nunca femenino.
+- Nunca juvenil.
+- Nunca excesivamente profundo/cinematográfico.
+- Nunca locutor.
+- Nunca teatral.
+- Nunca caricaturesco.
+
+### Descriptor oficial para Google Flow
+`Older Mexican man, around 60–70, medium-low baritone, slightly nasal, naturally rough and lightly hoarse from age, lived-in neighborhood voice, relaxed Mexican barrio cadence, sly playful undertone, dry irony, streetwise confidence, conversational and natural, never theatrical, never announcer-like, never youthful.`
+
+### Referencia de voz
+Cuando Google Flow permita Ingredients > Voices, usar una voz personalizada guardada como **Mako** y referenciarla como `@Voice: Mako`.
+
+## Movimiento corporal
+Mako NO debe parecer estatua.
+
+Aunque permanezca en el mismo lugar puede tener:
+- pequeños cambios de peso entre un pie y otro;
+- micro-movimientos de talón o punta;
+- ajustes mínimos de pies sin desplazarse;
+- movimiento natural de hombros;
+- gestos de manos conectados con lo que dice;
+- pequeños movimientos de cabeza;
+- respiración y postura vivas.
+
+No caminar sin motivo. No abandonar su soporte. No bailar o moverse exageradamente salvo que el guion lo pida.
+
+Si una línea describe una acción, Mako debe realizar ESA acción de manera reconocible durante esa línea. No usar poses genéricas o movimientos aleatorios.
 
 ## Lenguaje
 Puede usar naturalmente y variar según contexto:
