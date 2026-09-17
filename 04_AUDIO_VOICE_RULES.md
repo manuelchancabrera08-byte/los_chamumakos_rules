@@ -25,14 +25,14 @@ Cuando haya dos voces:
 - Claramente más joven y más agudo que Mako.
 
 ## Mako — VOZ OFICIAL ACTUAL
-Mako debe sonar como **un señor mexicano de barrio con picardía**, no como locutor ni como una voz genérica grave.
+Mako debe sonar como **un hombre mexicano de barrio con picardía y colmillo**, con presencia vocal clara, no como locutor ni como una voz genérica grave.
 
 ### Identidad acústica
-- Hombre mexicano de aproximadamente **60–70 años percibidos**.
-- Registro **barítono medio-bajo**, con pecho natural, nunca voz de tráiler.
-- Timbre envejecido, vivido y de calle.
-- **Nasalidad perceptible pero natural**, con resonancia ligeramente adelantada hacia nariz y máscara facial.
-- **Naturalmente áspero, ronquito y ligeramente rasposo**, como una voz gastada por la edad.
+- Hombre mexicano de aproximadamente **45–55 años percibidos**.
+- Registro **barítono medio**, masculino, presente y con cuerpo, pero nunca bajo extremo ni voz de tráiler.
+- **Nasalidad perceptible y frontal**, con la resonancia colocada hacia nariz y máscara facial.
+- Timbre vivido y de calle, pero más joven y presente que una voz de anciano.
+- **Ligera aspereza y ronquera natural**, solo lo suficiente para dar textura; no debe sonar cansado ni frágil.
 - Cadencia relajada de barrio mexicano.
 - Picardía audible: parece que siempre sabe algo que el cliente no sabe.
 - Colmillo, seguridad callejera y una sonrisa apenas perceptible en la voz, sin convertirla en caricatura.
@@ -42,13 +42,15 @@ Mako debe sonar como **un señor mexicano de barrio con picardía**, no como loc
 - Puede arrastrar levemente una sílaba, cortar algún final o meter una inflexión pícara en palabras como `joven`, `jefe`, `ándele`, `mire`, sin exagerar.
 
 ### Color vocal buscado
-Pensar en: **señor de barrio mayor, colmilludo, algo nasal, ronquito, relajado, pícaro, con seguridad de quien siempre tiene una salida**.
+Pensar en: **hombre de barrio mexicano de mediana edad, nasal, barítono, ronquito ligero, pícaro, colmilludo, seguro, con presencia y con la sensación de que ya se las sabe todas**.
 
 No debe sonar agresivo ni delincuencial. La picardía viene de la seguridad, la ironía y la cadencia, no de gritar ni sobreactuar.
 
 ### NO debe sonar
 - femenino;
-- juvenil;
+- adolescente o veinteañero;
+- anciano frágil;
+- abuelo cansado;
 - limpio de locutor;
 - demasiado profundo/cinematográfico;
 - teatral;
@@ -58,20 +60,20 @@ No debe sonar agresivo ni delincuencial. La picardía viene de la seguridad, la 
 - como alguien intentando hacer una voz chistosa.
 
 ### Descripción recomendada para Google Flow / Custom Voice
-`Older Mexican neighborhood man, around 60–70, medium-low baritone with natural chest weight, clearly nasal-forward resonance, lived-in and weathered timbre, naturally rough, lightly hoarse and slightly raspy from age, relaxed Mexican barrio cadence, sly mischievous undertone, streetwise confidence, dry playful irony, subtle smile in the voice, quick answers as if he always already knows the excuse, conversational and natural, warm but colmilludo, never theatrical, never announcer-like, never youthful, never overly deep or cinematic.`
+`Mexican neighborhood man, around 45–55 years old, medium male baritone with clear presence and natural chest support, noticeable nasal-forward resonance placed in the nose and front of the face, slightly rough and lightly hoarse but not elderly, lived-in street voice, relaxed Mexican barrio cadence, sly mischievous undertone, strong picardía and colmillo, dry playful irony, subtle smirk in the voice, quick confident answers as if he already knows the excuse, conversational and natural, streetwise and present, never theatrical, never announcer-like, never youthful, never elderly, never overly deep or cinematic.`
 
 ### Frase de prueba recomendada
 Antes de usar créditos de video, probar la voz con una línea típica como:
 `Ándele, joven... así mero. ¿Pa' qué le movemos más?`
 
-Si esa frase no suena a señor de barrio mayor, nasal, ronquito y pícaro, NO aprobar todavía la voz.
+Si esa frase no suena a hombre mexicano de barrio de mediana edad, nasal, barítono, pícaro y colmilludo, NO aprobar todavía la voz.
 
 ## Google Flow — referencia de voz
 La vía preferida para continuidad vocal es usar **Ingredients > Voices** y una voz de un solo hablante.
 
 ### Flujo recomendado
 1. Crear una voz personalizada y guardarla con el nombre **Mako**.
-2. Elegir una voz base masculina madura que ya se acerque al timbre deseado.
+2. Elegir una voz base masculina de mediana edad que ya tenga presencia y algo de nasalidad.
 3. En `Voice Performance`, usar la descripción oficial anterior.
 4. Probarla con una frase corta típica de Mako antes de gastar créditos de video.
 5. En los prompts de video, referenciarla como `@Voice: Mako` cuando Flow lo permita.
