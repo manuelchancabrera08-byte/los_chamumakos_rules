@@ -167,8 +167,28 @@ Y cada turno de Mako debe decir `MAKO SPEAKS ONLY`.
 **Regla nueva:** permitir cambios sutiles de peso, micro-movimientos de pies/talones, hombros, cabeza y postura, sin desplazarse ni abandonar su soporte. Toda acción principal sigue ligada al diálogo.
 
 ### 31. Acción reconocible, no pose aleatoria
-**Problema:** al nombrar un trend como `farmear aura`, el motor puede inventar una pose genérica.
-**Regla nueva:** investigar el movimiento y describir físicamente la acción. En el episodio del gimnasio, las palmas, altura de manos, alternancia arriba/abajo, ritmo, postura y movimiento de pies deben especificarse; no confiar únicamente en el nombre del trend.
+**Problema:** al nombrar un trend como `farmear aura`, Flow puede no ejecutar una pose útil si solo se menciona el nombre.
+**Regla nueva:** describir biomecánica completa. Si una línea introduce la acción (`Este es el siguiente ejercicio.`), terminar la frase y entrar inmediatamente en la pose sin pausa muerta.
+
+### 32. Prompt visual de gimnasio aprobado
+**Resultado:** la estructura actual del prompt de Flow para Mako entrenador funciona correctamente en identidad visual, cámara, pose y ownership de diálogo.
+**Regla nueva:** no rehacer ese prompt desde cero; cuando el resultado visual ya es correcto, hacer cambios mínimos y aislados.
+
+### 33. No dejar cola muerta al final del clip
+**Síntoma:** una generación terminó narrativamente cerca de 8.8 s y dejó alrededor de 1–1.2 s sin acción útil.
+**Corrección:** diseñar el último intercambio para terminar cerca de 9.6–9.9 s, dejando solo unas décimas de cierre visual.
+**Regla nueva:** en clips de 10 s, medir el guion para aprovechar casi todo el tiempo disponible. Si sobran 1–2 s, añadir un remate ultracorto útil antes que una pose vacía prolongada.
+
+### 34. Risitas automáticas de Flow no son parte del estilo
+**Síntoma:** Flow añadió risas/chuckles al final aunque el guion no las pedía.
+**Corrección:** prohibir explícitamente laughter, chuckles, giggles, audience laughter, comedy reactions, ad-libs y post-dialogue vocalizations.
+**Regla nueva:** Los Chapumakos no llevan risas automáticas. El humor debe quedar seco.
+
+### 35. Voz de Mako sigue sin estar aprobada
+**Síntoma:** cambiar edad/gravedad/ronquera no ha producido todavía la identidad deseada.
+**Diagnóstico:** demasiada énfasis en `old/deep/hoarse` empuja a voz de abuelo o narrador; lo buscado parece depender más de colocación nasal, sequedad, grit/rasp, fry ligero, articulación cotidiana y cadencia de barrio.
+**Nueva estrategia:** calibrar la voz fuera del video y cambiar una sola variable por prueba. Base sugerida: hombre mexicano 40–50, barítono medio no profundo, fuerte resonancia nasal frontal, tono seco ligeramente pinzado, borde gritty/rasp natural, vocal fry leve al final, articulación relajada, picardía y colmillo. Evitar `very hoarse`, `deep bass`, `elderly`.
+**Regla de ahorro:** no usar créditos de video para buscar la voz. Aprobar primero la voz en pruebas aisladas y luego aplicarla a `@Voice: Mako`.
 
 ## Regla de mantenimiento
 Cada nuevo error real debe documentarse aquí con:
