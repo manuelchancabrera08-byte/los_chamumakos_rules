@@ -34,18 +34,19 @@ El personaje antiguo con copete/mohawk o apariencia distinta al Mako oficial YA 
 No reutilizar ese diseño en nuevas imágenes, prompts o character sheets.
 
 ## Voz oficial
-Mako debe sonar como **un señor mexicano de barrio con colmillo**, no como un locutor ni como una voz genérica grave.
+Mako debe sonar como **un señor mexicano de barrio con colmillo y picardía audible**, no como locutor ni como una voz genérica grave.
 
 - Masculina.
 - Aproximadamente 60–70 años percibidos.
 - Barítono medio-bajo.
 - Peso de pecho natural.
-- Ligera nasalidad.
+- Nasalidad clara pero natural; resonancia adelantada hacia nariz/máscara facial.
 - Voz vivida, algo gastada por la edad.
 - Naturalmente áspera, ronquita y ligeramente rasposa.
 - Cadencia relajada de barrio mexicano.
-- Picardía audible.
-- Ironía seca, juguetona y segura.
+- Picardía audible, como si siempre supiera algo que el otro no.
+- Ironía seca y juguetona.
+- Ligera sonrisa en la voz, sin sonreír visualmente ni hacer voz cómica.
 - Respuesta rápida, pero tranquila.
 - Debe sonar como un señor que ya conoce todos los trucos y siempre tiene una salida.
 - Nunca femenino.
@@ -56,7 +57,7 @@ Mako debe sonar como **un señor mexicano de barrio con colmillo**, no como un l
 - Nunca caricaturesco.
 
 ### Descriptor oficial para Google Flow
-`Older Mexican man, around 60–70, medium-low baritone, slightly nasal, naturally rough and lightly hoarse from age, lived-in neighborhood voice, relaxed Mexican barrio cadence, sly playful undertone, dry irony, streetwise confidence, conversational and natural, never theatrical, never announcer-like, never youthful.`
+`Older Mexican neighborhood man, around 60–70, medium-low baritone with natural chest weight, clearly nasal-forward resonance, lived-in and weathered timbre, naturally rough, lightly hoarse and slightly raspy from age, relaxed Mexican barrio cadence, sly mischievous undertone, streetwise confidence, dry playful irony, subtle smile in the voice, quick answers as if he always already knows the excuse, conversational and natural, warm but colmilludo, never theatrical, never announcer-like, never youthful, never overly deep or cinematic.`
 
 ### Referencia de voz
 Cuando Google Flow permita Ingredients > Voices, usar una voz personalizada guardada como **Mako** y referenciarla como `@Voice: Mako`.
@@ -75,7 +76,9 @@ Aunque permanezca en el mismo lugar puede tener:
 
 No caminar sin motivo. No abandonar su soporte. No bailar o moverse exageradamente salvo que el guion lo pida.
 
-Si una línea describe una acción, Mako debe realizar ESA acción de manera reconocible durante esa línea. No usar poses genéricas o movimientos aleatorios.
+Si una línea describe o introduce una acción, la acción debe ocurrir con timing lógico. Ejemplo aprobado para `El primer ejercicio es este.`: Mako TERMINA la frase y **enseguida, sin pausa innecesaria**, entra en una pose reconocible de farmear aura / Six-Seven. No empezar con una pose aleatoria antes de presentar el ejercicio.
+
+Cuando se use la pose Six-Seven: ambas manos abiertas, palmas hacia arriba a la altura del pecho; una mano sube mientras la otra baja y luego alternan, con rango corto, actitud seria y segura.
 
 ## Lenguaje
 Puede usar naturalmente y variar según contexto:
