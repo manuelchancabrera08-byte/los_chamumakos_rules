@@ -25,59 +25,62 @@ Cuando haya dos voces:
 - Claramente más joven y más agudo que Mako.
 
 ## Mako — VOZ OFICIAL ACTUAL
-La voz objetivo de Mako se basa en la referencia auditiva aprobada por el usuario: **hombre mexicano adulto, fresco, seguro, natural, con picardía tranquila y mucha confianza**. No debe sonar anciano ni exageradamente ronco.
+La voz objetivo de Mako se basa en la referencia auditiva aprobada por el usuario: **hombre mexicano adulto, de barrio, vendedor/locatario informal, fresco, seguro, natural, pícaro y con mucho colmillo**. Debe sonar como alguien que trata con clientes todo el día, habla sin formalidad y siempre tiene una salida rápida.
 
 ### Identidad acústica
 - Hombre mexicano de aproximadamente **35–45 años percibidos**.
-- Registro **barítono medio**, con cuerpo suficiente pero sin profundidad de locutor.
-- Voz claramente masculina, presente y ágil.
-- **Nasalidad frontal moderada y natural**: se percibe hacia nariz y máscara facial, pero sin sonar tapado.
-- Timbre ligeramente seco, con una **rasposidad leve** y natural.
-- Muy poca ronquera; solo textura, nunca voz cansada o envejecida.
-- Articulación relajada y cotidiana.
-- Cadencia mexicana urbana/de barrio, natural y conversacional.
-- Ritmo dinámico: responde rápido, con seguridad, sin atropellar.
-- Picardía tranquila, colmillo y una confianza que suena natural.
-- Ironía seca, pero sin hacer “voz de comedia”.
-- Puede tener una ligera sonrisa en la voz, como si ya supiera la respuesta.
-- Debe sentirse como alguien que habla con clientes todos los días y domina la conversación.
+- Registro **barítono medio**, masculino, con cuerpo natural pero sin profundidad de locutor.
+- **Nasalidad frontal claramente audible**, colocada hacia nariz y máscara facial, sin sonar congestionado.
+- Timbre ligeramente seco, un poco raspado y con textura de calle.
+- Muy poca ronquera; solo una textura ligera, nunca voz vieja ni cansada.
+- Voz ágil, despierta y presente.
+- Articulación relajada, informal y cotidiana.
+- Cadencia muy mexicana, de barrio/mercado/taller/puesto, no corporativa ni profesional.
+- Puede cortar finales, comerse ligeramente alguna consonante o estirar palabras como `joven`, `jefe`, `mire`, `ándele`, de forma natural.
+- Picardía tranquila, colmillo y mucha seguridad.
+- Ironía seca y una sonrisa leve en la voz, como si ya supiera por dónde va la conversación.
+- Responde rápido, sin sonar apurado.
+- Debe sentirse como un vendedor, mecánico, comerciante o locatario que sabe hablarle a la gente y siempre encuentra cómo darle la vuelta a la situación.
 
 ### Color vocal buscado
-Pensar en: **hombre mexicano de 35–45, barítono medio, un poco nasal, ligeramente raspado, fresco, seguro, natural, rápido, con picardía tranquila y colmillo**.
+Pensar en: **vendedor mexicano de barrio, 35–45, barítono medio, nasal, ligeramente raspado, muy natural, informal, pícaro, ágil, seguro y con colmillo**.
 
 ### NO debe sonar
-- femenino;
-- adolescente;
-- anciano;
-- abuelo;
-- demasiado grave;
-- demasiado ronco;
-- lento o cansado;
+- formal;
+- educado de oficina;
+- corporativo;
 - locutor;
 - narrador de comercial;
-- teatral;
+- presentador;
+- actor teatral;
 - caricaturesco;
-- cinematográfico;
-- excesivamente pulido de estudio.
+- demasiado grave;
+- anciano;
+- abuelo;
+- demasiado ronco;
+- lento o cansado;
+- excesivamente limpio o pulido de estudio.
 
 ### Descripción recomendada para Google Flow / Custom Voice
-`Mexican man, around 35–45 years old. Medium male baritone with clear presence, slightly nasal forward resonance, lightly dry and subtly raspy texture, natural everyday Mexican speech, relaxed urban barrio cadence, quick confident delivery, calm but streetwise, sly and mischievous undertone, strong picardía and colmillo, dry irony, subtle smile in the voice, conversational and fresh, like someone who deals with customers every day and always has the answer ready. Clearly masculine, natural and human. Never elderly, never overly deep, never heavily hoarse, never announcer-like, never theatrical, never cartoonish, never polished commercial narrator.`
+`Mexican neighborhood street-vendor type man, around 35–45 years old. Medium male baritone, clearly nasal-forward resonance, lightly dry and subtly raspy texture, very natural and informal Mexican street speech, relaxed barrio / market / workshop cadence, quick confident delivery, slightly lazy casual articulation, sly mischievous undertone, strong picardía and colmillo, dry irony, subtle smirk in the voice, sounds like a vendor or mechanic who talks to customers all day and always has an answer ready. Clearly masculine, agile, streetwise, unpolished and human. Not formal, not corporate, not announcer-like, not polished, not theatrical, not elderly, not overly deep, not heavily hoarse.`
 
 ### Frase de prueba recomendada
 `Oiga, joven... yo se lo arreglo. ¿Y si sale mal? Pues lo volvemos a arreglar.`
 
 Criterio de aprobación:
-- suena mexicano y natural;
+- suena claramente mexicano;
+- suena de barrio/mercado/taller, no formal;
 - edad percibida 35–45;
-- ligera nasalidad audible;
-- ligera textura raspada sin sonar viejo;
+- nasalidad evidente pero natural;
+- textura ligeramente raspada;
 - voz ágil y segura;
-- picardía tranquila, no sobreactuada;
-- cero locutor.
+- picardía tranquila;
+- cero locutor;
+- cero voz corporativa o demasiado correcta.
 
 ## Google Flow — estrategia de calibración de voz
 1. Crear/editar la voz personalizada guardada como **Mako**.
-2. Elegir una voz base masculina adulta, media, ágil y natural; evitar voces graves o envejecidas.
+2. Elegir una voz base masculina adulta, media, ágil, nasal y natural; evitar voces formales, graves o pulidas.
 3. Usar la descripción oficial anterior en `Voice Performance`.
 4. Probar siempre la misma frase corta.
 5. Cambiar una sola variable por prueba: nasalidad, raspado, edad percibida o cadencia.
@@ -94,5 +97,6 @@ Criterio de aprobación:
 - Ambiente realista y discreto.
 - Sonido de locación natural.
 - No introducir sonidos cuya fuente contradiga lo visible.
-- **No generar risas, chuckles, giggles, carcajadas, risas de fondo, audience laughter ni reacción cómica automática**, salvo que el guion las pida de forma explícita.
-- Después de la última línea no añadir vocalizaciones, risitas ni ad-libs inventados.
+- **PROHIBIDO generar risas de fondo, laugh track, sitcom laughter, audience laughter, chuckles, giggles, carcajadas, reacción de público o risas estilo programa de TV de los 70/80/90**, salvo que el guion las pida explícitamente.
+- Después de la última línea no añadir vocalizaciones, risitas, ad-libs ni reacción cómica automática.
+- El humor debe venir únicamente del diálogo y la actuación de los personajes, nunca de una pista de risas.
