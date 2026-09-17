@@ -16,6 +16,7 @@ Esta es la plantilla principal para producción nueva de Los Chapumakos.
 4. Acción física coherente con cada línea.
 5. Continuidad visual.
 6. Ritmo suficiente para rematar dentro del clip.
+7. Aprovechar casi toda la duración disponible sin dejar 1–2 segundos muertos al final.
 
 ## Google Flow — voz
 Cuando esté disponible, preferir Ingredients > Voices.
@@ -25,8 +26,8 @@ Para Mako:
 - referenciarla como `@Voice: Mako`;
 - no reinventar la voz en cada clip;
 - usar la descripción oficial de `04_AUDIO_VOICE_RULES.md` para Voice Performance;
-- la identidad central actual es **hombre mexicano de barrio de mediana edad, barítono, nasal, con presencia, ronquito ligero, pícaro y colmilludo**;
-- evitar empujarlo a una voz de anciano, abuelo o barítono excesivamente profundo.
+- la identidad central actual es **hombre mexicano de barrio de mediana edad, barítono medio, nasal hacia adelante, seco, un poco rasposo, natural, pícaro y colmilludo**;
+- evitar voz de anciano, abuelo, locutor o barítono excesivamente profundo.
 
 ## Estructura recomendada del prompt
 
@@ -44,7 +45,7 @@ Mako is calm, confident and colmilludo. He never looks surprised by his own answ
 
 VOICE:
 @Voice: Mako
-Mako sounds like a Mexican neighborhood man around 45–55, medium male baritone with clear presence and natural chest support, noticeable nasal-forward resonance, slightly rough and lightly hoarse but not elderly, lived-in street voice, relaxed Mexican barrio cadence, sly mischievous undertone, strong picardía and colmillo, dry playful irony, subtle smirk in the voice, quick confident answers as if he already knows the excuse. Conversational and natural, streetwise and present, never theatrical, never announcer-like, never elderly, never overly deep or cinematic.
+Mako sounds like a Mexican neighborhood man around 40–50, medium male baritone with clear vocal presence, forward nasal resonance, dry slightly pinched tone, naturally rough with a light raspy edge and mild hoarseness, slightly imperfect lived-in street voice, relaxed Mexican barrio cadence, casual articulation, subtle vocal fry at some phrase endings, sly mischievous undertone, strong picardía and colmillo, dry playful irony, quick confident answers. Conversational, natural and unpolished, like a neighborhood vendor or mechanic who talks to customers all day; never elderly, never announcer-like, never polished studio voice, never theatrical, never overly deep or cinematic.
 
 OFF-SCREEN CUSTOMER:
 Young adult Mexican man, 22–30, masculine light tenor, clean and clear voice. Customer remains completely off-screen.
@@ -54,6 +55,7 @@ When the customer speaks, Mako stays silent and his mouth remains closed. When M
 
 SCENE RHYTHM:
 Keep dialogue concise enough to play naturally within about 10 seconds. Short pauses only. Do not rush speech unnaturally.
+Design the timeline so the FINAL SPOKEN LINE finishes around 9.6–9.9 seconds whenever the scene benefits from a final punchline. Do not leave 1–2 seconds of empty hold unless intentionally requested.
 
 ACTION + DIALOGUE:
 Every important physical action must match the exact line being spoken OR happen immediately after a line when the line is introducing the action.
@@ -65,6 +67,7 @@ DIALOGUE:
 
 AUDIO:
 Natural location ambience only. No music unless requested. Dialogue must be clear and conversational Mexican Spanish.
+Do NOT generate laughter, chuckles, giggles, audience laughter, comedy reactions, invented ad-libs or post-dialogue vocalizations unless explicitly written in the script.
 
 STYLE:
 Dry everyday Mexican humor. The characters never perform the joke. Mako treats the absurd answer as completely normal and logical.
@@ -82,9 +85,17 @@ Si una escena depende de una referencia cultural o movimiento reconocible:
 ### Ejemplo operativo — pose de aura tipo power-up
 Después de `Este es el siguiente ejercicio.` Mako entra inmediatamente en una pose de poder muy marcada: ambos pies separados sobre el soporte, uno apenas adelantado; rodillas ligeramente flexionadas; pecho elevado; torso firme; ambos codos doblados y llevados hacia atrás; puños cerrados colocados a ambos lados de la cadera; hombros abajo; barbilla ligeramente baja; mirada intensa y lejana con párpados a medio ojo. Mantiene la pose como si estuviera acumulando energía, con tensión contenida y un pequeño cambio de peso, sin desplazarse.
 
+## Regla de uso completo del clip
+- Si una versión termina narrativamente cerca del segundo 8.0–8.8, NO dejar el resto vacío por defecto.
+- Evaluar si cabe un último intercambio ultracorto que mejore el remate.
+- Preferir una línea final de Mako que cierre cerca de 9.6–9.9 s.
+- Dejar solo 0.1–0.4 s de cierre visual cuando sea suficiente.
+- No rellenar con risas, ad-libs ni sonidos cómicos inventados.
+
 ## Regla de ahorro de créditos
 - Validar primero la imagen de referencia.
 - Validar la voz personalizada antes del video.
 - Revisar que el diálogo realmente cabe en 10 segundos.
 - Revisar que cada movimiento importante esté descrito físicamente.
-- No generar hasta que esos cuatro puntos estén claros.
+- Revisar que el remate no termine demasiado pronto.
+- No generar hasta que esos puntos estén claros.
