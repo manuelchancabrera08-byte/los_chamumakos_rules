@@ -154,7 +154,7 @@ Y cada turno de Mako debe decir `MAKO SPEAKS ONLY`.
 
 ### 28. Google Flow permite referencias de voz
 **Hallazgo oficial de Google Flow:** en generaciones con Ingredients se pueden añadir referencias de voz, crear una voz personalizada, describir su Voice Performance y referenciarla mediante `@Voice`.
-**Aplicación:** crear una voz personalizada guardada como `Mako`, probarla primero con el preview de voz y reutilizarla en clips posteriores. Esto debe preferirse a intentar fijar el timbre únicamente con texto en cada generación.
+**Aplicación:** crear una voz personalizada guardada como **Mako**, probarla primero con el preview de voz y reutilizarla en clips posteriores. Esto debe preferirse a intentar fijar el timbre únicamente con texto en cada generación.
 **Regla de ahorro de créditos:** validar la voz antes del video.
 
 ### 29. Nuevo ADN de guion confirmado por muestras
@@ -189,6 +189,53 @@ Y cada turno de Mako debe decir `MAKO SPEAKS ONLY`.
 **Diagnóstico:** demasiada énfasis en `old/deep/hoarse` empuja a voz de abuelo o narrador; lo buscado parece depender más de colocación nasal, sequedad, grit/rasp, fry ligero, articulación cotidiana y cadencia de barrio.
 **Nueva estrategia:** calibrar la voz fuera del video y cambiar una sola variable por prueba. Base sugerida: hombre mexicano 40–50, barítono medio no profundo, fuerte resonancia nasal frontal, tono seco ligeramente pinzado, borde gritty/rasp natural, vocal fry leve al final, articulación relajada, picardía y colmillo. Evitar `very hoarse`, `deep bass`, `elderly`.
 **Regla de ahorro:** no usar créditos de video para buscar la voz. Aprobar primero la voz en pruebas aisladas y luego aplicarla a `@Voice: Mako`.
+
+## 2026-09-17 — Baseline aprobado tras pruebas reales de Flow
+
+### 36. La voz finalmente aprobada es más serena y menos “pícara rápida”
+**Resultado:** el usuario aprobó la voz obtenida con una descripción de hombre mexicano de barrio de aproximadamente 40–50 años, voz media, claramente raspada/seca, algo granulada, ligeramente nasal hacia el frente, calmada, serena, relajada y no acelerada.
+**Regla nueva:** esta dirección SUPERA las descripciones históricas de 60–70/deep baritone y también la idea de `quick confident delivery`. Mako no debe sonar como abuelo ni como pícaro acelerado. Su identidad actual es seria, tranquila, raspada, natural, de barrio y con colmillo.
+
+### 37. Speaker lock más fuerte: enumerar frases permitidas
+**Síntoma:** Flow seguía haciendo que Mako hablara líneas del cliente aun con ownership general.
+**Corrección aprobada:** declarar `There are EXACTLY TWO voices` y enumerar literalmente qué frases puede decir cada voz. Además, dentro de cada bloque del cliente repetir que Mako no produce voz, mantiene la boca cerrada y no hace lip-sync.
+**Regla nueva:** para clips Mako + cliente fuera de cámara, el prompt debe incluir lista explícita de líneas permitidas por hablante; no depender únicamente de `MAKO SPEAKS ONLY` / `CUSTOMER SPEAKS ONLY` global.
+
+### 38. Lip-sync debe definirse como articulación continua
+**Síntoma:** Mako podía hablar con la boca quieta o detener la articulación antes de terminar la frase.
+**Corrección aprobada:** exigir movimiento visible de boca, mandíbula y hocico desde el primer fonema hasta la última sílaba, cerrando la boca solo después de terminar.
+**Regla nueva:** este bloque debe conservarse en futuros prompts, especialmente para la última línea.
+
+### 39. Silencios de Flow deben bloquear cualquier voz humana
+**Síntoma:** en pausas sin diálogo aparecieron risas o sonidos humanos de fondo.
+**Corrección aprobada:** además de prohibir risas, declarar que durante cada `NO DIALOGUE` no existe NINGUNA voz humana y que el silencio es intencional.
+**Regla nueva:** ambiente solo no humano y muy discreto: room tone, ventilación y ruido no verbal mínimo. Prohibir radio, TV, noticiero, recorded speech, PA, podcast, conversaciones, voces lejanas, laugh track, chuckles, giggles y ad-libs.
+
+### 40. Mako debe verse como mono real haciendo cosas humanas
+**Síntoma:** algunas referencias parecían un humano vestido de mono o un personaje semirreal.
+**Corrección aprobada:** insistir en `REAL SMALL CAPUCHIN MONKEY`, anatomía animal real, manos/pies de mono, peso, balance, gravedad e inercia reales; prohibir humanoid monkey, human in costume, mascot, CGI/cartoon behavior.
+**Regla nueva:** la prioridad visual es “mono real primero, personaje/trabajador después”. Los actos humanos deben ser ejecutados por un cuerpo de mono real.
+
+### 41. Párpados a medio ojo son identidad permanente
+**Resultado:** el usuario confirmó que los párpados semicerrados transmiten tranquilidad y confianza y deben mantenerse siempre.
+**Regla nueva:** proteger `HALF-LOWERED / HALF-CLOSED EYELIDS` en reference lock, actuación y cierre. No abrir los ojos ampliamente salvo petición expresa.
+
+### 42. Objetos en mano no pueden desaparecer al iniciar una acción
+**Síntoma:** la tabla que Mako sostenía desaparecía mágicamente cuando entraba en la pose.
+**Corrección aprobada:** resolver físicamente el objeto antes de la acción: bajar → colocar sobre superficie lógica → soltar → mantener visible y quieto.
+**Regla nueva:** si Mako necesita liberar una mano, describir explícitamente el destino del objeto. Preferir colocar/apoyar antes que lanzar para reducir fallos de física.
+
+### 43. Cada nuevo clip con nueva imagen se escribe como prompt independiente
+**Corrección de proceso:** aunque narrativamente sea “segunda parte”, si el usuario dará una nueva imagen de referencia, NO usar `continue`, `Part 1`, `same final state` ni asumir estado del clip anterior.
+**Regla nueva:** tratar la nueva imagen como autoridad absoluta del primer frame y redactar un prompt completo e independiente. Solo usar continuidad textual si el usuario la pide expresamente.
+
+### 44. El remate físico puede cerrar mejor que más diálogo
+**Resultado aprobado:** después de la lógica absurda, Mako puede cerrar con una acción simple, seria y coherente. Ejemplo aprobado: `Son quinientos pesos.` mientras extiende una mano vacía, palma arriba, cobrando al cliente sin sonreír.
+**Regla nueva:** cuando funcione, reservar 0.3–0.5 s finales para sostener la acción del remate. La acción debe ser simple, anatómicamente creíble y sincronizada con la línea.
+
+### 45. No reescribir un baseline que ya funciona
+**Resultado:** el prompt independiente con reference lock + realismo animal + voz aprobada + speaker lock enumerado + lip-sync continuo + silencios estrictos + timeline funcionó muy bien.
+**Regla de ahorro de créditos:** este conjunto pasa a ser baseline. En futuros clips cambiar diálogo, timing y acciones necesarias, pero conservar intactos los bloques que ya resolvieron voz, realismo, separación de hablantes, lip-sync y audio.
 
 ## Regla de mantenimiento
 Cada nuevo error real debe documentarse aquí con:
