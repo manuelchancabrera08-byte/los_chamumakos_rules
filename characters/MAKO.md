@@ -20,65 +20,48 @@ Trabajador, técnico, vendedor, empleado, entrenador o dueño vivo.
 - Debe conservar proporciones animales realistas.
 - Rasgo facial clave: pelaje oscuro tipo capucha/corona sobre la parte superior de la cabeza y frente.
 - Expresión habitual: serena, segura y ligeramente escéptica.
-- LOS PÁRPADOS DEBEN ESTAR SIEMPRE A MEDIO OJO / SEMICERRADOS; nunca ojos completamente abiertos salvo instrucción explícita excepcional.
-- Mirada tranquila, con colmillo; nunca expresión infantil o exageradamente sorprendida.
+- LOS PÁRPADOS DEBEN ESTAR SIEMPRE A MEDIO OJO / SEMICERRADOS.
+- Mirada tranquila, con colmillo.
 - Cola, manos y pies anatómicamente coherentes y consistentes.
 
 ## Escala en escenarios humanos
 Mako no debe verse nunca como un humano de estatura completa.
-Cuando interactúe con mobiliario, mostradores, bancos de gimnasio, talleres, cocinas, oficinas u objetos diseñados para humanos, usar un soporte físico lógico si es necesario: banco, caja, silla, cajón pliométrico, mesa, plataforma, mostrador u otro elemento del entorno.
-La escala del entorno debe dejar claro que Mako es un mono pequeño.
-
-## Diseño deprecado
-El personaje antiguo con copete/mohawk o apariencia distinta al Mako oficial YA NO DEBE USARSE como referencia de Mako ni de Chapu.
-No reutilizar ese diseño en nuevas imágenes, prompts o character sheets.
+Cuando interactúe con objetos humanos, usar un soporte físico lógico si es necesario: banco, caja, silla, cajón pliométrico, mesa, plataforma o mostrador.
 
 ## Voz oficial
-Mako debe sonar como **un señor mexicano de barrio con colmillo y picardía audible**, no como locutor ni como una voz genérica grave.
+Mako debe sonar como **un hombre mexicano adulto, fresco, seguro y natural, con picardía tranquila y colmillo**.
 
 - Masculina.
-- Aproximadamente 60–70 años percibidos.
-- Barítono medio-bajo.
-- Peso de pecho natural.
-- Nasalidad clara pero natural; resonancia adelantada hacia nariz/máscara facial.
-- Voz vivida, algo gastada por la edad.
-- Naturalmente áspera, ronquita y ligeramente rasposa.
-- Cadencia relajada de barrio mexicano.
-- Picardía audible, como si siempre supiera algo que el otro no.
-- Ironía seca y juguetona.
-- Ligera sonrisa en la voz, sin sonreír visualmente ni hacer voz cómica.
-- Respuesta rápida, pero tranquila.
-- Debe sonar como un señor que ya conoce todos los trucos y siempre tiene una salida.
-- Nunca femenino.
-- Nunca juvenil.
-- Nunca excesivamente profundo/cinematográfico.
+- Aproximadamente 35–45 años percibidos.
+- Barítono medio.
+- Presencia clara, sin ser demasiado grave.
+- Ligera nasalidad frontal natural.
+- Timbre un poco seco y ligeramente raspado.
+- Muy poca ronquera; nunca voz de anciano.
+- Cadencia mexicana urbana/de barrio.
+- Ritmo ágil y seguro.
+- Picardía tranquila.
+- Ironía seca.
+- Ligera sonrisa en la voz.
+- Responde como alguien que ya tiene la salida lista.
 - Nunca locutor.
 - Nunca teatral.
 - Nunca caricaturesco.
+- Nunca excesivamente grave o cinematográfico.
 
 ### Descriptor oficial para Google Flow
-`Older Mexican neighborhood man, around 60–70, medium-low baritone with natural chest weight, clearly nasal-forward resonance, lived-in and weathered timbre, naturally rough, lightly hoarse and slightly raspy from age, relaxed Mexican barrio cadence, sly mischievous undertone, streetwise confidence, dry playful irony, subtle smile in the voice, quick answers as if he always already knows the excuse, conversational and natural, warm but colmilludo, never theatrical, never announcer-like, never youthful, never overly deep or cinematic.`
+`Mexican man, around 35–45 years old. Medium male baritone with clear presence, slightly nasal forward resonance, lightly dry and subtly raspy texture, natural everyday Mexican speech, relaxed urban barrio cadence, quick confident delivery, calm but streetwise, sly and mischievous undertone, strong picardía and colmillo, dry irony, subtle smile in the voice, conversational and fresh, like someone who deals with customers every day and always has the answer ready. Clearly masculine, natural and human. Never elderly, never overly deep, never heavily hoarse, never announcer-like, never theatrical, never cartoonish, never polished commercial narrator.`
 
 ### Referencia de voz
 Cuando Google Flow permita Ingredients > Voices, usar una voz personalizada guardada como **Mako** y referenciarla como `@Voice: Mako`.
 
 ## Movimiento corporal
 Mako NO debe parecer estatua.
+Puede tener pequeños cambios de peso, micro-movimientos de talón o punta, ajustes mínimos de pies, movimiento natural de hombros, manos, cabeza, respiración y postura.
 
-Aunque permanezca en el mismo lugar puede tener:
-- pequeños cambios de peso entre un pie y otro;
-- micro-movimientos de talón o punta;
-- ajustes mínimos de pies sin desplazarse;
-- movimiento natural de hombros;
-- gestos de manos conectados con lo que dice;
-- pequeños movimientos de cabeza;
-- respiración y postura vivas.
+No caminar sin motivo. No abandonar su soporte.
 
-No caminar sin motivo. No abandonar su soporte. No bailar o moverse exageradamente salvo que el guion lo pida.
-
-Si una línea describe o introduce una acción, la acción debe ocurrir con timing lógico. Ejemplo aprobado para `El primer ejercicio es este.`: Mako TERMINA la frase y **enseguida, sin pausa innecesaria**, entra en una pose reconocible de farmear aura / Six-Seven. No empezar con una pose aleatoria antes de presentar el ejercicio.
-
-Cuando se use la pose Six-Seven: ambas manos abiertas, palmas hacia arriba a la altura del pecho; una mano sube mientras la otra baja y luego alternan, con rango corto, actitud seria y segura.
+Si una línea introduce una acción, la acción debe ocurrir con timing lógico. Ejemplo: `Este es el siguiente ejercicio.` → Mako termina la frase y enseguida entra en la pose.
 
 ## Lenguaje
 Puede usar naturalmente y variar según contexto:
@@ -94,7 +77,7 @@ Puede usar naturalmente y variar según contexto:
 - ándele
 - órale
 
-No repetir siempre `jefe`. Alternar con naturalidad según escena. Evitar saturar de modismos o sonar actuado.
+No saturar de modismos ni sonar actuado.
 
 ## Regla
 **Mako nunca se queda sin respuesta.**
