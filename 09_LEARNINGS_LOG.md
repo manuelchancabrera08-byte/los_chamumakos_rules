@@ -283,3 +283,28 @@ Cada nuevo error real debe documentarse aquí con:
 - si la voz de Mako ya funcionó, conservar exactamente su descriptor aprobado.
 
 **Regla de ahorro de créditos:** después de comprobar un fallo persistente de speaker crossing, el siguiente intento debe usar el modo de una sola voz, no otra variación de prompt con dos voces.
+
+
+## 2026-09-18 — Corrección basada en dos prompts confirmados por el usuario
+
+### 48. Los prompts que SÍ funcionan no usan pausa dura en cada cambio de hablante
+**Evidencia confirmada por el usuario:** dos prompts distintos funcionaron correctamente en Google Flow: el clip de pozole y el primer clip del iPhone.
+
+**Hallazgo importante:** ambos prompts permiten cambios de hablante directamente adyacentes en algunos puntos del timeline. Por lo tanto, la regla 46 de insertar obligatoriamente 0.3–0.5 s de silencio entre CADA cambio de hablante queda INVALIDADA como regla universal.
+
+**Nueva regla:** conservar exactamente la arquitectura del prompt que ya funcionó para esa escena. No introducir pausas adicionales, locks nuevos, ni redundancias no presentes en el baseline funcional salvo que un error específico lo requiera.
+
+### 49. No reforzar la voz aprobada con descripciones nuevas
+**Hallazgo:** los prompts funcionales usan el descriptor oficial de Mako sin capas extra de `same man / same pitch / same timbre / do not generate a new voice`.
+**Nueva regla:** cuando un prompt ya produjo la voz correcta, copiar el bloque vocal literalmente. No añadir nuevas restricciones acústicas ni reformularlo, porque eso puede hacer que Flow reinterprete la identidad vocal.
+
+### 50. Para segunda parte del mismo concepto, usar el prompt funcional del primer clip como plantilla literal
+**Nueva regla:** si el primer clip de una escena ya funcionó, el siguiente clip debe derivarse de ESE prompt funcional, no de una versión posterior “mejorada”. Cambiar únicamente:
+- líneas permitidas;
+- timeline estrictamente necesario;
+- acciones nuevas;
+- cierre físico.
+Todo lo demás debe permanecer textual y estructuralmente igual.
+
+### 51. Regla 47 — fallback de una sola voz NO aplica si el usuario requiere audio completo en Flow
+**Corrección:** la estrategia de una sola voz + edición externa no debe proponerse como solución principal cuando el usuario necesita las dos voces dentro de Flow. Solo usarla si el usuario la pide expresamente.
