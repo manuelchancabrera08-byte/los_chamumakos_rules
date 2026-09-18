@@ -245,3 +245,22 @@ Cada nuevo error real debe documentarse aquí con:
 - causa probable
 - corrección aplicada
 - regla nueva o modificada
+
+## 2026-09-18 — Cruce de voces en Google Flow
+
+### 46. Separación dura entre cambios de hablante
+**Síntoma:** en algunos clips Google Flow empieza la voz del siguiente hablante antes de que termine completamente la voz anterior, aunque el ownership de líneas sea correcto.
+
+**Causa probable:** los bloques temporales quedan demasiado pegados y Flow estira ligeramente la duración real de una frase, provocando solapamiento en el cambio de hablante.
+
+**Corrección:** entre CADA cambio de hablante insertar un bloque explícito de `NO DIALOGUE` de aproximadamente 0.3–0.5 s. Dentro de ese bloque declarar `BOTH VOICES COMPLETELY SILENT` y `The previous speaker's voice must be fully finished before the next speaker begins`.
+
+**Regla nueva:** nunca colocar un turno de MAKO inmediatamente adyacente a un turno del CUSTOMER ni viceversa. Todo cambio de hablante debe tener una pequeña zona muerta de audio. Los bloques pueden tocarse solo si es el mismo hablante.
+
+**Refuerzo global:** añadir al speaker lock:
+- `NO OVERLAP UNDER ANY CIRCUMSTANCE.`
+- `One voice must be completely finished before the other voice begins.`
+- `Do not extend any spoken line beyond its assigned timestamp block.`
+- `Do not start the next spoken line early.`
+
+**Regla de ahorro de créditos:** cuando el problema sea cruce de voces, NO cambiar las voces ni reescribir el baseline. Corregir únicamente separación temporal y bloqueo de overlap.
