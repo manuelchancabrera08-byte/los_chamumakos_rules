@@ -264,3 +264,22 @@ Cada nuevo error real debe documentarse aquí con:
 - `Do not start the next spoken line early.`
 
 **Regla de ahorro de créditos:** cuando el problema sea cruce de voces, NO cambiar las voces ni reescribir el baseline. Corregir únicamente separación temporal y bloqueo de overlap.
+
+
+## 2026-09-18 — Fallback económico cuando Flow cruza voces
+
+### 47. Si dos voces siguen fallando, sacar al cliente del audio generado
+**Síntoma:** aun con speaker lock, pausas duras y líneas más cortas, Google Flow puede cruzar turnos o cambiar la identidad vocal de Mako.
+
+**Impacto:** cada reintento cuesta créditos; repetir pruebas del mismo fallo deja de ser económicamente aceptable.
+
+**Corrección robusta:** si una escena Mako + cliente fuera de cámara falla por cruce de voces o voz incorrecta después de una versión bien estructurada, NO seguir añadiendo instrucciones al prompt ni regenerando a ciegas. Generar en Flow SOLO la voz de Mako y la actuación visual completa. Los turnos del cliente se representan como bloques temporales de silencio con reacción de Mako, y la voz del cliente se añade después en edición.
+
+**Regla nueva de producción:** para preservar créditos, el modo de mayor estabilidad es:
+- Flow genera visual + voz de Mako solamente;
+- durante los futuros turnos del cliente: `NO GENERATED SPEECH`, boca de Mako cerrada y reacción visual;
+- mantener huecos temporales exactos para insertar la voz del cliente en Filmora/edición;
+- cero segunda voz generada en Flow;
+- si la voz de Mako ya funcionó, conservar exactamente su descriptor aprobado.
+
+**Regla de ahorro de créditos:** después de comprobar un fallo persistente de speaker crossing, el siguiente intento debe usar el modo de una sola voz, no otra variación de prompt con dos voces.
