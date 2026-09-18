@@ -308,3 +308,17 @@ Todo lo demás debe permanecer textual y estructuralmente igual.
 
 ### 51. Regla 47 — fallback de una sola voz NO aplica si el usuario requiere audio completo en Flow
 **Corrección:** la estrategia de una sola voz + edición externa no debe proponerse como solución principal cuando el usuario necesita las dos voces dentro de Flow. Solo usarla si el usuario la pide expresamente.
+
+
+## 2026-09-18 — Fallo crítico confirmado: Flow reasigna la voz off-screen a Mako
+
+### 52. Un solo personaje visible + voz off-screen no es confiable en esta configuración
+**Síntoma confirmado:** en la segunda parte del video del iPhone, durante los turnos del cliente fuera de cámara, Google Flow hizo hablar a Mako en su lugar.
+
+**Condiciones de la escena:** una sola toma, cámara fija, un solo personaje visible, sin cambios de escena, movimiento mínimo y diálogo corto.
+
+**Conclusión operativa:** en esta configuración, el prompt textual por sí solo NO garantiza que una voz off-screen sea mantenida separada del único rostro visible. Flow puede reasignar el diálogo del cliente al personaje visible aunque el ownership esté explicitado.
+
+**Regla nueva de ahorro de créditos:** NO volver a gastar créditos intentando resolver este fallo únicamente con nuevas variaciones de prompt textual. Si el usuario exige dos voces completas dentro de Flow, se debe considerar esta combinación no confiable hasta contar con un mecanismo de voz/referencia que fije de forma real la identidad de cada hablante.
+
+**Importante:** no interpretar este fallo como falta de detalle del prompt. Añadir más restricciones, pausas, labels o redundancia NO ha demostrado resolverlo de forma consistente.
