@@ -126,9 +126,13 @@ def overlay(img, meme_text):
     return img
 
 def main():
+    if not os.getenv("OPENAI_API_KEY"):
+        print("OPENAI_API_KEY todavía no configurada; no se genera imagen.")
+        return
     refs=references()
     if not refs:
-        raise SystemExit("Faltan referencias de Don Mako en personajes/don_mako")
+        print("Todavía no hay referencias de Don Mako en personajes/don_mako; no se genera imagen.")
+        return
 
     history=load_history()
     idea=choose_idea(history)
