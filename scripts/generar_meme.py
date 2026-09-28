@@ -164,7 +164,7 @@ because meme text will be added later. Avoid duplicate limbs, extra fingers, mal
             model="gpt-image-2",
             image=handles if len(handles)>1 else handles[0],
             prompt=prompt,
-            size="1024x1280",
+            size="1024x1536",
             quality="medium"
         )
     finally:
